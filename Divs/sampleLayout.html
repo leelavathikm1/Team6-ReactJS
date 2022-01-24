@@ -17,10 +17,30 @@ h1 {
     text-align: center;
     padding: 30px;
 }
-div {
-    border: 2px solid;
+div#parentDiv {
+    
     margin: 5px;
     
+}
+div#child-1 {
+    border:2px solid;
+    width: 450px;
+    height: 180px;
+    float: left;
+}
+div#child2 {
+    border: 2px solid;
+    width: 450px;
+    height: 180px;
+    float: right;
+}
+div#parentDiv {
+    overflow: auto;
+}
+div#footer {
+    border: 2px solid;
+    margin: 5px;
+    height: 100px;
 }
 
     </style>
@@ -35,7 +55,8 @@ div {
             <div id="child-1">child</div>
             <div id="child2">child2</div>
         </div>
-        <div footer>Footer</div>
+        <div id="footer">Footer</div>
+        <h5></h5>
     </div>
 </body>
 </html>
