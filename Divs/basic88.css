@@ -1,0 +1,48 @@
+div#parentHeader {
+    background-color: darkgray;
+}
+header {
+    width: 900px;
+    margin: 0 auto;
+    overflow: auto;
+}
+div#headerLogo {
+    margin: 10px;
+    float: left;
+    width: 270px;
+}
+nav {
+    width: 600px;
+    background-color: aquamarine;
+    float: right;
+    margin-top: 20px;
+}
+header li {
+    display: inline;
+    margin-right: 60px;
+}
+div#imageDiv {
+    width: 900px;
+    margin: auto;
+    margin-top: 10px;
+}
+#imageDiv img {
+    width: 900px;
+    height: 350px;
+}
+div#parentSection {
+    width: 900px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.imageDives {
+    width: 220px;
+    height: 150px;
+    float: left;
+}
+figure {
+    width: 200px;
+}
+figure img {
+    width: 200px;
+}
