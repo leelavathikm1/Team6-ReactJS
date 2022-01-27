@@ -46,3 +46,24 @@ figure {
 figure img {
     width: 200px;
 }
+div#articleDiv {
+    width: 900px;
+    margin: 0 auto;
+    overflow: auto;
+}
+article {
+    width: 425px;
+    float: left;
+    height: 250px;
+}
+div#articleImage {
+    width: 425px;
+    float: right;
+    height: 250px;
+}
+#articleImage img {
+    width: 415px;
+    height: 225px;
+    border: 1px solid;
+    padding: 4px;
+}
