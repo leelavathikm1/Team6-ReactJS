@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        div#parent {
+        background-color: gray;
+        }
+        div#div1 {
+    position: static;
+    border: 2px solid red;
+    left: 10px;
+    }
+    div#div2 {
+    position: relative;
+    left: 20px;
+    border: 2px solid;
+    }
+    div#div3 {
+    position: fixed;
+    border: 3px solid blue;
+    width: 400px;
+    bottom: 0;
+    right: 0;
+    }
+    div#div4 {
+  		position: absolute;
+  		top: 80px;
+  		right: 0;
+  		width: 200px;
+  		height: 100px;
+  		border: 3px solid #73AD21;
+		}
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="div1">Static</div>
+        <div id="div2">Relative</div>
+        <div id="div3">Fixed</div>
+        <div id="div4">Absolute</div>
+        <div id="div5">Sticky</div>
+    </div>
+</body>
+</html>

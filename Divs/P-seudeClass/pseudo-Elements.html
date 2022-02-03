@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+        p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+    }
+    p::first-letter {
+    color: #3a0aac;
+    font-size: xx-large;
+    
+    }
+    /* ::-moz-selection { /* Code for Firefox 
+     color: red;
+    background: yellow;
+    } */
+    ::selection {
+    color: red;
+    background: yellow;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- What are Pseudo-Elements?
+        A CSS pseudo-element is used to style specified parts of an element.
+        Style the first letter, or line, of an element
+        Insert content before, or after, the content of an element 
+    -->
+    <!-- Syntex
+        selector::pseudo-element {
+        property: value;
+    }
+    p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+    }
+
+    ::first-line pseudo-element can only be applied to block-level elements.
+
+    The following properties apply to the ::first-line pseudo-element:
+
+    font properties
+    color properties
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+
+    -The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+    p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+    }
+
+    <p class="intro">This is an introduction.</p>
+
+    ::-moz-selection { /* Code for Firefox */
+     color: red;
+    background: yellow;
+    }
+
+    ::selection {
+    color: red;
+    background: yellow;
+    }
+
+    -->
+
+    <p>        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+    </p>
+    <p id="second-P">        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+    </p>
+    <p>        Lorem Ipsum <i>is simply dummy text of the printing</i>  span and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+    </p>
+
+    <!-- Selector	Example	Example description
+    ::after	p::after	Insert something after the content of each <p> element
+    ::before	p::before	Insert something before the content of each <p> element
+    ::first-letter	p::first-letter	Selects the first letter of each <p> element
+    ::first-line	p::first-line	Selects the first line of each <p> element
+    ::marker	::marker	Selects the markers of list items
+    ::selection	p::selection	Selects the portion of an element that is selected by a user
+    -->
+
+
+</body>
+</html>

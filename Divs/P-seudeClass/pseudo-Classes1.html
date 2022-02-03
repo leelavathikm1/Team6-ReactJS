@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{
+            color: red;
+        }
+        p#second-P{
+            background-color: chartreuse;
+        }
+        p i:first-child {
+        color: blue;
+        } 
+    </style>
+</head>
+<body>
+    <!-- What are Pseudo-classes?
+    A pseudo-class is used to define a special state of an element.
+
+    Style an element when a user mouses over it
+    Style visited and unvisited links differently
+    Style an element when it gets focus -->
+
+    <!-- Syntex 
+    selector:pseudo-class {
+    property: value;
+    }
+    p:first-child {
+    color: blue;
+}
+p i:first-child {
+  color: blue;
+} 
+-->
+<p>        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+</p>
+<p id="second-P">        Lorem Ipsum is simply <i>is simply dummy text of the printing</i>dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+</p>
+<p>        Lorem Ipsum <i>is simply dummy text of the printing</i>  span and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+</p>
+
+<!-- 
+:focus	input:focus	Selects the <input> element that has focus
+:hover	a:hover	Selects links on mouse over
+:in-range	input:in-range	Selects <input> elements with a value within a specified range
+:invalid	input:invalid	Selects all <input> elements with an invalid value
+:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute value starting with "it"
+:last-child	p:last-child	Selects every <p> elements that is the last child of its parent
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+:link	a:link	Selects all unvisited links
+:not(selector)	:not(p)	Selects every element that is not a <p> element
+:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent
+:optional	input:optional	Selects <input> elements with no "required" attribute
+:out-of-range	input:out-of-range	Selects <input> elements with a value outside a specified range
+:read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
+:read-write	input:read-write	Selects <input> elements with no "readonly" attribute
+:required	input:required	Selects <input> elements with a "required" attribute specified
+:root	root	Selects the document's root element
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid	input:valid	Selects all <input> elements with a valid value
+:visited	a:visited	Selects all visited links 
+-->
+
+</body>
+</html>
