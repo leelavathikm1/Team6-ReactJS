@@ -34,12 +34,30 @@ p {
 div:hover p {
   display: block;
 }
-div:hover {
+/* div:hover {
   background-color: blue;
-}
+} */
 h1:first-child {
   color: red;
   background-color:yellowgreen;
+}
+h1:last-child{
+  color: #0000FF;
+}
+h1:nth-child(2){
+  border: 2px solid;
+}
+h1:nth-child(4){
+  border: 2px solid red;
+}
+h1:nth-last-child(2){
+  background-color: aqua;
+}
+h1:nth-last-child(4){
+  background-color: rgb(75, 28, 151);
+}
+h1:not(h1){
+  color: #00FF00;
 }
   
 
@@ -47,6 +65,12 @@ h1:first-child {
 </head>
 <body>
   <div>
+    <h1>Iam From Heading-1</h1>
+    <h1>Iam From Heading-1</h1>
+    <h1>Iam From Heading-1</h1>
+    <h1>Iam From Heading-1</h1>
+    <h1>Iam From Heading-1</h1>
+    <h1>Iam From Heading-1</h1>
     <h1>Iam From Heading-1</h1>
     <h1>Iam From Heading-1</h1>
     <h1>Iam From Heading-1</h1>
