@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 2px solid;
+}
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+        <label for="fName">First Name : </label>
+        <input type="text" placeholder="Enter Name" disabled> <br><br>
+        <label for="lName">Last Name :</label>
+        <input type="text" name="" id="" step="3"> <br><br>
+        <label for="number">Mobile Num.</label>
+        <input type="number" ><br>
+        <input type="email">
+        <input type="password"><br>
+        <input type="radio"><br>
+        <input type="date"><br>
+        <input type="button"><br>
+        <input type="time" name="" id=""><br>
+        <input type="range"><br>
+        <input type="search"><br>
+        <input type="checkbox"><br>
+        <select name="" id="">
+            <option value="">Html</option>
+            <option value="">Css</option>
+        </select><br>
+        <button>Submit</button><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <label for="pincode">Pincode</label>
+        <input type="number" value="pincode" Autofocus>
+
+    </fieldset>
+
+    </form>
+
+    <!-- Form elements
+        <form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+ -->
+
+ <!-- Form Types
+    input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week"> -->
+
+    <!-- Input attributes
+    Disabled <input type="text" id="fname" name="fname" value="John" disabled>
+    Readonly <input type="text" id="fname" name="fname" value="John" readonly> 
+    Value <input type="text" id="fname" name="fname" value="John">
+    Size <input type="text" id="fname" name="fname" size="50">
+    MaxLength <input type="text" id="pin" name="pin" maxlength="4" size="4">
+    Min & Max <input type="number" id="quantity" name="quantity" min="1" max="5">
+    Multiple <input type="file" id="files" name="files" multiple>
+    Placeholder <input type="tel" id="phone" name="phone" placeholder="Name">
+    Required <input type="text" id="username" name="username" required>
+    Step <input type="number" id="points" name="points" step="3"> The step attribute specifies the legal number intervals for an input element.
+    Autofocus <input type="text" id="fname" name="fname" autofocus> The autofocus attribute specifies that the input field should automatically get focus when the page loads
+    Autocompleate <input type="email" id="email" name="email" autocomplete="on"> he autocomplete attribute specifies whether or not an input field should have autocomplete enabled.
+    -->
+
+    <!-- Form Attributes
+    Formaction <input type="submit" formaction="/action_page2.php" value="Submit as Admin"> 
+    Formenctype <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    Formmethod <input type="submit" formmethod="post" value="Submit using POST">
+    Formtarget <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+        The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+    Formnovalidate <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+        formnovalidate attribute specifies that an <input> element should not be validated when submitted.
+    -->
+</body>
+</html>
