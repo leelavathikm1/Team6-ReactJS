@@ -15,14 +15,14 @@
     <form style="width: 400px; background-color: aqua;">
         <fieldset>
             <legend>Student Details</legend>
-        <label for="">Enter Name : </label>
-        <input type="text">
+        <!-- <label for="">Enter Name : </label> -->
+        <input type="text" placeholder="Enter Name">
         <br><br>
         <label for="">Enter Age : </label>
-        <input type="number">
+        <input type="number"min="1" max="5">
         <br><br>
         <label for=""> City : </label>
-        <input type="text">
+        <input type="text" readonly>
         <br><br>
         <textarea name="\" id="" cols="30" rows="10"></textarea>
         <br><br>
@@ -31,9 +31,13 @@
        <label for="">Gender</label>
        <br><br>
        <input type="radio" name="" id="">
-       <label for="">Female</label>
-       <input type="radio" name="" id="">
+       <!-- <label for="">Female</label> -->
+       <input type="radio" name="" id="">Female
        <label for="">Male</label>
+
+       <br><br>
+       <input type="button" value="Submit">
+       <button>Login</button>
        
 
     </fieldset>
