@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            counter-reset: section;
+
+        }
+        h2::before{
+            counter-increment: section;
+            content:"Car " counter(section) ":";
+        }
+    </style>
+</head>
+<body>
+    <!--Automatic numbering with counters
+         Css Counters are like "variables"
+         (Which will track how many times they are used)
+     -->
+
+     <h1>Using CSS Counters</h1>
+
+     <h2>Volvo</h2>
+     <h2>Audi</h2>
+     <h2>Mahindra</h2>
+     <h2>Maruti</h2>
+     <h2>KIA</h2>
+</body>
+</html>
