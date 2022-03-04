@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent-1{
+            position: absolute;
+            width: 500px;
+            background-color: turquoise;
+            margin: 0 auto;
+            text-align: center;
+            height: 200px;
+            border: 2px solid;
+            z-index: -1;
+        }
+        #child-1{
+            width: 300px;
+            height: 150px;
+            margin: 20px;
+            z-index: -1;
+        }
+
+        #parent-2{
+            position: absolute;
+            width: 300px;
+            left: 0;
+            top: 0;
+            background-color: red;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- the Z-Index property specifies  the stack order of an element
+    the z-Index only works on positened elements -->
+
+    <div id="parent-1">
+        <div id="child-1">
+            <h2>Hello Iam From z-Index Topic</h2>
+        </div>
+    </div>
+    <div id="parent-2">
+        <div id="child-2">
+            <h2>Hello Iam Child-2 Element</h2>
+        </div>
+    </div>
+
+</body>
+</html>

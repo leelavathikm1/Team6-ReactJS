@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+} 
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #ac4057;
+  color: #ffffff;
+  padding: 15px;
+}
+.header h1 {
+    text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #c4d814;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #da26ad;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration:underline;
+  color: #12b2ec;
+}
+
+.aside {
+  background-color: #12b2ec;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+img {
+    height: 250px;
+}
+.row {
+    background-color: bisque;
+}
+
+.footer {
+  background-color: #51585a;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+    body{
+        border: 2px solid;
+        padding: 10px;
+        background-color: chartreuse;
+    }
+    
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tourist place</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>manali</li>
+    <li>ladakh</li>
+    <li>coorg</li>
+    <li>andaman</li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <h1>Goa place</h1>
+    <P>Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches, stellar nightlife, eclectic seafood, world-heritage listed architecture. Spread across just 3,702 km, Goa lies in the Konkan region. It is a far cry from the hippie haven or </P>
+  </div>  
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>Udaipur</h2>
+      <p>popular tourist destination state of Rajasthan.</p>
+      <h2>Srinagar</h2>
+      <p> Srinagar is located in the union territory of Jammu & Kashmir,</p>
+      <h2>Gangtok</h2>
+      <p>Gangtok, the capital of Sikkim</p>
+    </div>
+  </div>
+</div>
+<div class=row>
+    <div class="col-4 first">
+        <h2>MANALI</h2>
+        <img src="https://www.holidify.com/images/bgImages/MANALI.jpg" alt="">
+        <p>One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges covered with snow for most parts of the year. </p>
+    </div>
+    <div class="col-4 second">
+        <h2>MUNNAR</h2>
+        <img src="https://www.holidify.com/images/bgImages/MUNNAR.jpg" alt="">
+        <p>Popular among honeymooners, Munnar is a hill station in the state of Kerala. Located in the Western Ghats at a height of 1600 metres, Munnar is famous for its tea estates, greenery, blankets of mist forming natural-view points.</p>
+    </div>
+    <div class="col-4 third">
+        <h2>VARKALA</h2>
+        <img src="https://www.holidify.com/images/bgImages/VARKALA.jpg" alt="">
+        <p>Varkala is a coastal town in the southern part of Kerala known for the unique 15m high 'Northern Cliff' adjacent to the Arabian Sea. It is popular for its hippie culture, shacks on the cliff serving great seafood and playing global music and the samadhi of Kerala's saint Sree Narayana Guru</p>
+    </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,86 @@
+.container{
+    /* border:6px solid black; */
+    /* Display defaines the flex container its mandatory to work with flex box */
+    /* 1 Display property */
+    /* display:flex;
+    display: inline-flex;
+     */
+    /* 2.Flex Direction it defines the flex dit=rection in which the flex items are placed in the container */
+    /* display:flex; */
+    /* flex-direction: row */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* 3.Flex wrap  which is used to control the wrapping of items in the container*/
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* height: 400px;
+    flex-wrap: wrap-reverse; */
+
+    /*4. Flex flow  which is the shorthand of the combination flex-direction and flex-wrap*/
+    /* display: flex; */
+    /* flex-flow: row-reverse wrap; */
+    /* flex-flow: column-reverse wrap-reverse; 
+    height: 400px;  */
+
+    /*5. Justify content  this defines the allignment content that defines the allignment of the main axis*/
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* height: 800px; */
+    /* justify-content: flex-end;  */
+     /* justify-content: center; */
+
+     /* 6.Align Items which defines how flex-items are layed out of the cross axis*/
+     /* display: flex ;
+     height: 800px;  */
+     /* align-items: stretch; */
+     /* align-items: flex-end; */
+     /* align-items: baseline; */
+     /* .item1
+         padding-bottem:3rem 
+     .item-2
+      padding-bottom: 5rem;
+      .item-3
+      font-size:3rem */
+    
+      /* 7. Align content this is similarly to justify content this will allaign
+       along the cross axis istead of main axis it will work only with multiple row-items in the container*/
+    /* display: flex; */
+   /* height: 800px;
+   flex-wrap: wrap;
+   align-content:flex-end ;  */
+
+    /*8. flex Item-order  */
+ /* display: flex; need to give to items*/
+/* order: 2;
+order: 1;  */
+
+/* Flex grow
+ flex-grow: 1; need to give to item */
+
+ /* Flex Shrink
+ it will get shrink (adjust) when we reduce the browser width 
+ if u dont want to get shrink in .flex-item give flex-shrink:0;
+ the shrink u can give it to individual items as-well*/
+
+ /* flex basis
+ to item flex-basis:200px; */
+
+ /* Align self
+ .container height:400px; to itm-1 align-self:flex-start */
+
+ /*Responsive navbar */
+ 
+
+
+     
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    nav{
+        font-size:2rem;
+        background-color: blueviolet;
+    }
+    nav ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{
+        cursor: pointer;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    nav ul li:hover{
+        background-color: crimson;
+        color: white;
+    }
+
+    @media all and (max-width:400px){
+        nav ul{
+            flex-direction:column;
+        }
+        nav ul li{
+            text-align: center;
+        }
+    }
+
+    .container{
+        height: 400px;
+        width: 400px;
+        border: 5px solid black;
+         display: flex;
+         justify-content: center;
+        align-items: center;  
+    }
+    .item{
+        height: 80px;
+        width: 80px;
+        border: 3px solid orange;
+       
+       
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Centering Item -->
+
+    <div class="container">
+        <div class="item">
+            item
+        </div>
+    </div> 
+</body>
+</html>

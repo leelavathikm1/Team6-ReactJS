@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /*Global selector  */
+* {
+  box-sizing: border-box;
+}
+ body {
+  background-color: lightgreen;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(8, 188, 248);
+  }
+} 
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: rgb(22, 5, 173);
+  }
+} 
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: rgb(221, 13, 110);
+  }
+} 
+
+
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.Company-Names {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.Description {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Laptops</h1>
+</div>
+
+<div class="Company-Names">
+  <ul>
+    <li>HP</li>
+    <li>Lenovo</li>
+    <li>Acer</li>
+    <li>Apple</li>
+  </ul>
+</div>
+
+<div class="Description">
+  <h1>The Laptops</h1>
+  <p>On Gadgets Now, you can explore a wide range of laptops from renowned brands like Dell, Lenovo, HP, Apple, Asus, Sony, LG, Acer and more that are priced ...</p>
+    <p>Resize the browser window to see how the content respond to the resizing</p>
+</div>
+
+</body>
+</html>
+
+<!-- <style type="text/css">
+    /* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+    @media only screen and (min-width: 960px) {
+        /* styles for browsers larger than 960px; */
+    }
+    @media only screen and (min-width: 1440px) {
+        /* styles for browsers larger than 1440px; */
+    }
+    @media only screen and (min-width: 2000px) {
+        /* for sumo sized (mac) screens */
+    }
+    @media only screen and (max-device-width: 480px) {
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+    @media only screen and (device-width: 768px) {
+       /* default iPad screens */
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    }
+</style> -->
+
+
+<!-- If website on small devices behavior like desktop screen then you have to put this meta tag into header before
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+For media queries you can set this as
+
+this will cover your all mobile/cellphone widths
+
+ @media only screen and (min-width: 200px) and (max-width: 767px)  {
+    //Put your CSS here for 200px to 767px width devices (cover all width between 200px to 767px //
+   
+    }
+For iPad and iPad pro you have to use
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+        //Put your CSS here for 768px to 1024px width devices(covers all width between 768px to 1024px //   
+  }
+If you want to add css for Landscape mode you can add this
+
+and (orientation : landscape)
+
+  @media only screen and (min-width: 200px) and (max-width: 767px) and (orientation : portrait) {
+        //Put your CSS here for 200px to 767px width devices (cover all mobile portrait width //        
+  } -->
