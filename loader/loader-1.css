@@ -243,7 +243,7 @@ body{
         transform: rotateZ(360deg);
         -webkit-transform: rotateZ(360deg);
     }
-}
+} 
     .text{
         text-align: center;
         margin-top: 200px;

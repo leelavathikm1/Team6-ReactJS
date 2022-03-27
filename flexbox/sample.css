@@ -21,10 +21,10 @@
     flex-wrap: wrap-reverse; */
 
     /*4. Flex flow  which is the shorthand of the combination flex-direction and flex-wrap*/
-    /* display: flex; */
-    /* flex-flow: row-reverse wrap; */
-    /* flex-flow: column-reverse wrap-reverse; 
-    height: 400px;  */
+    display: flex;
+    flex-flow: row-reverse wrap;
+    flex-flow: column-reverse wrap-reverse; 
+    height: 400px; 
 
     /*5. Justify content  this defines the allignment content that defines the allignment of the main axis*/
     /* display: flex; */
@@ -53,10 +53,10 @@
     
       /* 7. Align content this is similarly to justify content this will allaign
        along the cross axis istead of main axis it will work only with multiple row-items in the container*/
-    /* display: flex; */
-   /* height: 800px;
+    display: flex;
+   height: 800px;
    flex-wrap: wrap;
-   align-content:flex-end ;  */
+   align-content:flex-end ; 
 
     /*8. flex Item-order  */
  /* display: flex; need to give to items*/
