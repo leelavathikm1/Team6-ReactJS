@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <div id="Div2"></div>
+    <div></div>
+    <script>
+        var myHead=document.createElement("h2")
+        document.body.appendChild(myHead)
+        myHead.innerText="Hello my world";
+
+        document.getElementById("demo").innerText="Welcome this is my world"
+        document.getElementById("demo").style.color="blue";
+        document.querySelector("h2").innerText="hiii hello"
+        document.querySelector("div").setAttribute("class","demo")
+
+        document.write("Hello guys this is padmaja")
+        console.log("welcome to console")
+        document.getElementById("Div2").innerHTML="this is div element";
+
+        var myTr=document.createElement("tr")
+        document.body.appendChild(myTr)
+
+        alert("Hi iam the alert box")
+        prompt("to select yes or no option")
+        confirm("y or n")
+    </script>
+    
+</body>
+</html>
