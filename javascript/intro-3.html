@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <h2>hello</h2>
+    <h2 id="first">javascript</h2>
+    <script>
+        // vairable
+        var myHeading=document.createElement("h1")
+        document.body.appendChild(myHeading)
+        myHeading.innerText="Hai all";
+
+        // selecting the element and manuplating the text
+        document.querySelector("h2").innerText="hello guys";
+        
+        // manuplating the text using id
+        document.getElementById("first").innerHTML="javascript welcomes u all";
+
+        // creating attributes to the element
+        document.querySelector("div").setAttribute("class","row")
+        document.querySelector("div").innerText="javascript";
+
+        // pop-up boxes
+        alert("hello world")
+        prompt("do u want to enter")
+        confirm("yes or no");
+
+        // different types of displaying msgs
+        document.write("javascript is flexible and versatile")
+        console.log("welcome to console")
+    </script>
+</body>
+</html>

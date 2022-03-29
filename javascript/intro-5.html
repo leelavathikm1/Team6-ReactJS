@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hii</h2>
+    <h3 id="line"> javascript</h3>
+    <script>
+        // variables
+        var heading=document.createElement("h1")
+        document.body.appendChild(heading)
+        heading.innerText="hello world";
+
+        // manuplating the element
+        document.querySelector("h2").innerText="hii all";
+
+        // manuplating text using id
+        document.getElementById("line").innerHTML="javascript welcomes u all";
+
+        // creating attributes to the element
+        document.querySelector("div").getAttribute("class","first")
+        document.querySelector("div").innerText="javascript";
+
+        // pop-up boxes
+        alert("hello world")
+        prompt("do u want to enter")
+        confirm("yes or no");
+
+        // different types of displaying msgs
+        document.write("im from javascript")
+        console.log("welcome to world")
+
+    </script>
+</body>
+</html>
