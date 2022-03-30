@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+    <table id="table"></table>
+    <script>
+        var fname="vishnu"
+        var lname="vardhan"
+        var fullName=fname+lname
+        // document.write(fullName)
+        document.querySelector("h2").innerText=fullName
+        var a=10
+        var b=9
+        var total=a+b
+        console.log(total)
+        var myth=document.createElement("th")
+        document.getElementById("table"). appendChild(myth)
+
+        //objects
+        var hoverboard={
+            brand:"Tygatic",
+            color:"white",
+            weight:"15 kgs"
+        }
+        hoverboard.wheelsize="8.5inches"
+        hoverboard['material']="alluminum"
+        console.log(hoverboard)
+
+        document.write(hoverboard.brand+"<br>"+hoverboard.color+"<br>"+hoverboard.weight+"<br>"+hoverboard.wheelsize+"<br>"+hoverboard.material)
+    </script>
+</body>
+</html>

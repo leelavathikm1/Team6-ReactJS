@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <table id="table"></table>
+    <script>
+        // datatypes
+        var a=20
+        var b=5
+        var total=b-a
+       console.log(total)
+         
+        var a="haritha"
+        var b="boppana"
+        var total=a+b
+       document.getElementById("name").innerHTML=total
+       var mytr=document.createElement("tr")
+       document.getElementById("table").appendChild(mytr)
+
+       //objects
+       var Tv={
+           screensize:"55 inches",
+           connectortype:"wi-fi",
+           Brand:"amazonbasics"
+       }
+       Tv.resolution="4k"
+       Tv['color']="black"
+       console.log(Tv)
+       document.write(Tv.screensize+"<br>"+Tv.connectortype+"<br>"+Tv.Brand+"<br>"+Tv.resolution+"<br>"+Tv.color)
+
+    </script>
+</body>
+</html>

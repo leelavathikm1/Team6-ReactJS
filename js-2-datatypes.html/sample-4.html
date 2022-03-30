@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="first"></h3>
+    <table id="table"></table>
+    <script>
+        var name="deepthi"
+        var surname="Boppana"
+        var fullname=surname+name
+        console.log(fullname)
+
+        var a=1
+        var b=2
+        var total=a+b
+    document.getElementById("first").innerHTML=total
+    var mytd=document.createElement("td")
+    document.getElementById("table"). append(mytd)
+    
+    //objects
+    var speakers={
+        connectiontype:"wireless",
+        brand:"Boat",
+        modelName:"stone 180"
+    }
+    speakers.color="black"
+    speakers['mountingtype']="tabletop"
+    console.log(speakers)
+
+    document.write(speakers.connectiontype+"<br>"+speakers.brand+"<br>"+speakers.modelName+"<br>"+speakers.color+"<br>"+speakers.mountingtype)
+    </script>
+</body>
+</html>

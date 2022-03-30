@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <table id="table"></table>
+    <script>
+        // datatypes
+    var a=11
+    var b=11
+    var result
+    console.log(result=a+b)
+
+    var a="java"
+    var b="script"
+    var fullName
+    console.log(fullName=a+b)
+
+    var fname="Hari"
+    var lname="deepthi"
+    var fullName
+    console.log(fullName=fname+lname) 
+
+    var a="Deepthi"
+    var b="boppana"
+    var total=a+b
+     document.getElementById("name").innerHTML=total ;
+
+     var mytr=document.createElement("tr")
+      document.getElementById("table").appendChild(mytr)
+      mytr.style.backgroundColor="grey"
+
+    // objects
+    var activa={};  //empty object
+
+    var activa={
+        name:"activa",
+        color:"white",
+        price:90000,
+        mileage:"30kms"
+    }
+    activa.model=2022 //adding missed property to the object using .notation
+    activa['speed']="30km per hour" //adding missed property to the object using array bracket notation[]
+    console.log(activa)
+
+    document.write(activa.name +"<br>"+ activa.color +"<br>"+activa.price +"<br>" +activa.color+"<br>" +activa.mileage+"<br>" +activa.model)
+    
+    </script>
+</body>
+</html>
