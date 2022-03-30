@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <h1>Document.getElementById Method</h1>
+      <div id="dispStudent"></div>
+
+      <hr>
+      <h1>Document.write Method</h1>
+    <script>
+      var student = {
+        name: "Mahesh",
+        age: 25,
+        mobile: 98864378,
+        city: "Chittoor",
+        state: "Andhra Pradesh",
+        pincode: 570072,
+      };
+      console.log(student);
+
+      document.write("Name : " + student.name +
+       " <br> Age : " + student.age +
+       " <br> Mobile : " + student.mobile +
+       " <br> City :" + student.city+
+       "<br> State : " +student.state +
+       " <br> Pincode : "+ student.pincode);
+
+       document.getElementById("dispStudent").innerHTML="Name : " + student.name+
+       " <br> Age : " + student.age +
+       " <br> Mobile : " + student.mobile +
+       " <br> City :" + student.city+
+       "<br> State : " +student.state +
+       " <br> Pincode : "+ student.pincode;
+
+    </script>
+  </body>
+</html>

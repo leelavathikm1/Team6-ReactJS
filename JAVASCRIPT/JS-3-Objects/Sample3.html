@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="displayStudent"></ul>
+    <script>
+        //For in loop Method
+        var student = {
+            "id": 1,
+            "fname": "Sigrid",
+        "lname": "Kamradt",
+        "tel": "(352)569-4519",
+        "address": "5686 Suspendisse Dr",
+        "city": "Elmwood Park",
+        "state": "RI",
+        "zip": 29019,
+        name: "Mahesh",
+        age: 25,
+        mobile: 98864378,
+        city: "Chittoor",
+        state: "Andhra Pradesh",
+        pincode: 570072,
+        
+      };
+
+
+      var results="";
+
+      for(a in student){
+        //   console.log(student)
+        // document.write(a + " : "+ student[a] + "<br>")
+
+        results = results + a + " : "+ student[a] + "<br>"
+
+      }
+
+      document.getElementById("displayStudent").innerHTML=results;
+
+        //1. Display Object with Document.write Method
+        //2. Display Object With document.getElementById Method
+        // 3. Use for In Loop display object with Document.write Method & document.getElementById Method
+    </script>
+</body>
+</html>
