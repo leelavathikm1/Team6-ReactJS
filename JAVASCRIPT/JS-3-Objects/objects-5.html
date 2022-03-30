@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var toYota = {};
+        var activa = {
+            name: "crysta",
+            price: 2000000,
+            model: "G4",
+        };
+        activa.mileage = "20km";
+        
+        activa["speed"] = "180km Per Hr";
+
+        console.log(activa);
+
+        document.write(
+            activa.name + "<br>" +
+            activa.price + "<br>" +
+            activa.model + "<br>" +
+            activa.mileage + "<br>" +
+            activa.speed
+        );
+    </script>
+</body>
+</html>

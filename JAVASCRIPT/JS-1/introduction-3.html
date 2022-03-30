@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv2"></div>
+    <div></div>
+    <h3 id="demo"></h3>
+    <h2>I am Javascript</h2>
+    <script>
+        var myHeading=document.createElement("h1")
+        document.body.appendChild(myHeading)
+        myHeading.innerHTML="Hello Javascript";
+        myHeading.style.backgroundColor ="yellow";
+
+        document.querySelector("h2").innerText = "Welcome to Javascript";
+
+        document.getElementById("demo").innerHTML = "Hi All Welcome to JS";
+        document.querySelector("div").setAttribute("class","demo1")
+        document.getElementById("myDiv2").style.color="red";
+        document.querySelector("h2").style.color="blue";
+
+        document.write("Hi guys Javascript welcomes You All")
+        console.log("Welocome to Console")
+        document.getElementById("myDiv2").innerHTML="Iam From Div Element";
+
+        var myTr=document.createElement("tr")
+        document.body.appendChild(myTr)
+
+        alert("Hi Iam from Alert Box")
+        prompt("Do You Want to enter Into Page")
+        confirm("conform Yes or No")
+
+    </script>
+</body>
+</html>
