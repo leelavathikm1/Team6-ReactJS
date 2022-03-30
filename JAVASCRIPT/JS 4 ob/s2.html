@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.getElementaryById method</h1>
+    <div id="Push"></div>
+
+    <hr>
+    <h1>document.write method</h1>
+    <script>
+        var employee={
+            empname:"sandy",
+            empid:2345,
+            empage:30,
+            empphone:324672384732,
+            emplocation:"BGR"
+        };
+        console.log(employee)
+
+        document.write(" empname : " + employee.empname +
+        " <br> empid : " + employee.empid +
+        " <br> empage : " + employee.empage +
+        " <br> empphone : " + employee.empphone +
+        " <br> emplocation : " + employee.emplocation);
+
+        document.getElementById("Push").innerHTML=" empname : " + employee.empname +
+        " <br> empid : " + employee.empid +
+        " <br> empage : " + employee.empage +
+        " <br> empphone : " + employee.empphone +
+        " <br> emplocation : " + employee.emplocation;
+    </script>
+</body>
+</html>

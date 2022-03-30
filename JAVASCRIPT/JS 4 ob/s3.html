@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>document.getElementById method</h3>
+    <div id="less"></div>
+
+    <hr>
+    <h3>document.write method</h3>
+    <script>
+        var lecturer={
+            lname:"Geethavani",
+            lage:40,
+            lsub:"Stats",
+            ldes:"PHD",
+            llocation:"Ctr",
+            lpin:517004
+        };
+        console.log(lecturer)
+
+        document.write(" lname : " + lecturer.lname +
+        " <br> lage : " + lecturer.lage +
+        " <br> lsub : " + lecturer.lsub +
+        " <br> ldes : " + lecturer.ldes +
+        " <br> llocation : " + lecturer.llocation +
+        " <br> lpin : " + lecturer.lpin);
+
+        document.getElementById("less").innerHTML=" lname : " + lecturer.lname +
+        " <br> lage : " + lecturer.lage +
+        " <br> lsub : " + lecturer.lsub +
+        " <br> ldes : " + lecturer.ldes +
+        " <br> llocation : " + lecturer.llocation +
+        " <br> lpin : " + lecturer.lpin;
+    </script>
+</body>
+</html>

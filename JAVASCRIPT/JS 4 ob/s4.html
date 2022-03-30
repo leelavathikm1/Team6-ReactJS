@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>document.getElementById method</h4>
+    <div id="emp"></div>
+
+    <hr>
+    <h4>document.write method</h4>
+    <script>
+        var police={
+            pname:"abc",
+            pid:11023,
+            page:45,
+            pdepart:"HG,HC,C,IPS",
+            ploc:"Tpt",
+            pstate:"AP"
+        };
+        console.log(police)
+
+        document.write("pname : " + police.pname +
+        " <br> pid : " + police.pid +
+        " <br> page : " + police.page +
+        " <br> pdepart : " + police.pdepart +
+        " <br> ploc : " + police.ploc +
+        " <br> pstate : " + police.pstate);
+
+        document.getElementById("emp").innerHTML="pname : " + police.pname +
+        " <br> pid : " + police.pid +
+        " <br> page : " + police.page +
+        " <br> pdepart : " + police.pdepart +
+        " <br> ploc : " + police.ploc +
+        " <br> pstate : " + police.pstate;
+
+    </script>
+</body>
+</html>
