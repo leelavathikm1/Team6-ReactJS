@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Student Detail</h3>
+    <strong id="student"></strong>
+    <script>
+        var saikiran={
+            Name:"SaiKiran",
+            group:"3rd b.com",
+            section:"A",
+            college:"pvkn",
+            mobile:6301400247,
+            address:"chittor 2-35",
+            pincode:517001
+        }
+        console.log(saikiran)
+
+        document.getElementById("student").innerHTML="Name:" +saikiran.Name +
+        "<br> group:" + saikiran.group +
+         "<br> section :"+ saikiran.section +
+         "<br> college " +saikiran.college +
+         " <br> mobile:" +saikiran.mobile +
+         "<br> address :" +saikiran.address +
+         "<br> pincode :"+ saikiran.pincode 
+    </script>
+</body>
+</html>

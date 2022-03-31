@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Company details</h3>
+    <strong id="sai"></strong>    
+    <script>
+        var company={
+            name :"amaraja",
+            place:"chittoor",
+            district:"chittoor",
+            mandal:"chittoor",
+            workers:5000,
+            vacancypost:4000,
+            pincode:517001
+        }
+        console.log(company)
+
+        document.getElementById("sai").innerHTML="name :"+company.name +
+        "<br> place :"+ company.place +
+        "<br> district "+ company.district +
+        "<br mandal "+ company.mandal +
+        "<br> workers " + company.workers +
+        "<br> vacancypost :"+ company.vacancypost+
+        "<br> pincode :"+ company.pincode 
+    </script>
+</body>
+</html>

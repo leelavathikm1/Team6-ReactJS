@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="vijay"></ul>
+    <script>
+        var  sports={
+            game:"cricket",
+            pname:"virat kohli",
+            country:"india",
+            age:30,
+            dob:26/00/2020,
+            height:1.75,
+            testmathes:101,
+            odi:260,
+            t20:2009            
+        }
+        var result="";
+        for(a in sports){
+           document.write(a +" : " +sports [a]+ "<br>")
+           result=result +a +" : " +sports [a]+ "<br>"
+        }
+        document.getElementById("vijay").innerHTML=result
+    </script>
+</body>
+</html>
