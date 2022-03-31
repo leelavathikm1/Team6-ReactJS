@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="displayStudent"></div>
+    <script>
+        var student={
+            "fname": "Earl",
+            "lname": "Cornwall",
+            "tel": "(928)585-0689",
+            "address": "2207 Magna Dr",
+            "city": "Rosenberg",
+            "state": "MD",
+            "zip": 66817,
+            name: "srinivas",
+            age: 37,
+            mobile: 889246114,
+            city: "Hyderabad",
+            state: "Telangana",
+            pincode: 500090,
+        };
+        var results="";
+
+        for(srividya in student){
+            // console.log(student)
+            // document.write(srividya + " : " + student[srividya] + "<br>")
+             
+            results=results + srividya + " ; " + student[srividya] + " <br>";
+        };
+
+        document.getElementById("displayStudent").innerHTML=results;
+
+    </script>
+</body>
+</html>

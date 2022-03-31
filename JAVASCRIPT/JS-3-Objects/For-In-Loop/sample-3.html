@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Use for in loop display object with Document getElementById method</h2>
+    <ul id="displayid"></ul>
+    <script>
+        var detalis={
+            name: "Hope",
+            name: "Ravenelle",
+            tel: "(244)494-9944",
+            address: "4619 Adipiscing St",
+            city: "Bergen County",
+            state: "NE",
+            zip: 84361,
+        };
+
+        var results="";
+
+        for(a in detalis){
+            results=results + a + " : " + detalis[a] + "<br>";
+            };
+            document.getElementById("displayid").innerHTML=results;
+    </script>
+    
+</body>
+</html>

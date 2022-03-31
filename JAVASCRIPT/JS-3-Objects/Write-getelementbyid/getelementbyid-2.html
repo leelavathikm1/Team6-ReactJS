@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document getElementById method</h1>
+    <h2 id="myH2"></h2>
+    <script>
+        var movie={
+            name: "RRR",
+            writer: "Vijayendra Prasad",
+            director: "S.S. Rajamouli",
+            producer: "D. V. V. Danayya",
+            heroes: "NTR Ramcharan",
+            heroine: "Alia Bhatt",
+        };
+
+        document.getElementById("myH2").innerHTML= "Name : " + movie.name +
+        "<br> Writer : " + movie.writer + 
+        "<br> Director : " + movie.director +
+        "<br> Producer : " + movie.producer +
+        "<br> Heroes : " + movie.heroes + 
+        "<br> Heroine : " + movie.heroine;
+    </script>
+</body>
+</html>

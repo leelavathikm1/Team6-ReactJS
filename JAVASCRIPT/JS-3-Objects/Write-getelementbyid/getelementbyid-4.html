@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document getElementById method</h1>
+    <ul id="myUl"></ul>
+    <script>
+        var college={
+            name: "SVL JR College",
+            state: "Andhra",
+            city: "Avanigadda",
+            mobile: 984775613,
+            pincode: 522102,
+        };
+        document.getElementById("myUl").innerHTML= "Name : " + college.name +
+        "<br> State : " + college.state + 
+        "<br> city : " + college.city + 
+        "<br> Mobile : " + college.Mobile + 
+        "<br> Pincode : " + college.pincode;
+    </script>
+    
+</body>
+</html>

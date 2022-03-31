@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document.getElementById Method</h1>
+    <div id="dispStudent"></div>
+    <script>
+        var student={
+            name: "Srividya",
+            age:31,
+            mobile: 995553861,
+            city: "Hyderabad",
+            state: "Telangana",
+            pincode: 500090,
+        };
+
+        document.getElementById("dispStudent").innerHTML= "Name : " + student.name +
+         " <br> Age : " + student.age +
+         "<br> Mobile : " + student.mobile+
+         "<br> City : " + student.city+
+         "<br> State : " + student.state +
+         "<br> Pincode :" + student.pincode; 
+    </script>
+    
+</body>
+</html>

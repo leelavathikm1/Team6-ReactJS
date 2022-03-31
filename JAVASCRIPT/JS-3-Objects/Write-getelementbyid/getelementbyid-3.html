@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document getElementById method</h1>
+    <table id="myTable"></table>
+    <script>
+        var address={
+            "fname": "Latasha",
+            "lname": "Wing",
+            "tel": "(574)720-9514",
+            "pincode": "500060",
+            "city": "Sarasota",
+            "state": "VT",
+            "zip": 75630,
+        };
+        document.getElementById("mytable").innerHTML= " Fname : " + address.fname + 
+        "<br> Lname : " + address.lname + 
+        "<br> Tel : " + address.tel + 
+        "<br> Pincode : " + address.pincode + 
+        "<br> city : " + address.city + 
+        "<br> State : " + address.state + 
+        "<br> Zip : " + address.zip;
+
+        
+    </script>
+</body>
+</html>
