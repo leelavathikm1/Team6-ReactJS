@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="details"></ul>
+    <hr>
+    <script>
+        //for-in-loop
+        var Redmi={
+            modelName:"Redmi note 11 pro",
+            brand:"Redmi",
+            memory:"12gb",
+            formFactor:"Bar",
+            os:"MUI 13",
+            model:2022
+        }
+        var features=""
+        for(mobile in Redmi){
+           // console.log(Redmi)
+           document.write(mobile + " : " + Redmi[mobile] + "<br>")
+           features=features + mobile + " : " + Redmi[mobile] + " <br> "
+        }
+        document.getElementById("details").innerHTML=features;
+        
+    </script>
+</body>
+</html>

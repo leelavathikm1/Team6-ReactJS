@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="korea"></ul>
+    <script>
+        var samsung={
+            modelName:"Samsung galaxy Z Flip3",
+            wirelessCarrier:"unlocked for all ",
+            brand:"Samsung",
+            formFactor:"flip",
+            memory:"128 GB",
+            os:"Android 11.0",
+            color:"Cream",
+            simCard:"dual"
+        }
+        var a=""
+        for(phone in samsung){
+            console.log(samsung)
+           // document.write(phone  +  " : "  +  samsung[ phone ] + "<br>")
+           a=a+phone + " : " + samsung[phone] + "<br>"
+        }
+        document.getElementById("korea").innerHTML=a    
+    </script>
+</body>
+</html>

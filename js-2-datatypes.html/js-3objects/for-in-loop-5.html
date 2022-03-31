@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="list"></div>
+    <br>
+    <hr>
+    <script>
+        var capitals={
+            Australia:"Canberra",
+            Kenya:"Nairobi",
+            Egypt:"Cairo",
+            Iraq:"Bagdad",
+            India:"New delhi",
+            Japan:"Tokyo",
+            China:"Beijing"
+        }
+        var world=""
+        for(countries in capitals){ 
+            console.log(capitals)
+            document.write(countries + " : " + capitals[ countries ] + " <br> ")
+
+            world=world+countries + " : " + capitals[countries] + " <br> "
+        }
+        document.getElementById("list").innerHTML=world
+    </script>
+</body>
+</html>

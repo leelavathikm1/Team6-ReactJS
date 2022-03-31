@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h3>Document.getelement by Id method</h3>
+<div id="productDetails"></div>
+<hr>
+<h3>document.write method</h3>
+<body>
+    <script>
+        var Macbook={
+            model:"Macbook air",
+            brand:"Apple",
+            colour:"silver",
+            screen:"13 inches",
+            specialfeature:"portable"
+        }
+        console.log(Macbook)
+        document.write(" Model : " + Macbook.model + "<br> brand : "+ Macbook.brand+
+         "<br> colour :" + Macbook.colour + "<br> screen :" + Macbook.screen+
+         "<br> special feature :"+ Macbook.specialfeature);
+
+         document.getElementById("productDetails").innerHTML="Model :" + Macbook.model+
+         "<br> Brand :"+Macbook.brand+"<br> Colour : " + Macbook.colour + "<br> Screen :" + Macbook.screen+
+         "<br> special feature :" + Macbook.specialfeature
+    </script>
+</body>
+</html>

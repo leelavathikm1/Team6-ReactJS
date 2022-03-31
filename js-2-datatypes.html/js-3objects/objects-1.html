@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Document.get element by id method</h2>
+    <div id="studentDetails"></div>
+    <hr>
+    <h2>document.write method</h2>
+    <script>
+        var student={
+            name:"Deepthi",
+            age:22,
+            village:"akkapalem",
+            district:"krishna",
+            state:"AP",
+            pincode:521235,
+        }
+        console.log(student)
+        document.write(" name : "+ student.name+" <br> age :"+student.age+
+        "<br> village :"+student.village+"<br> District :"+student.district+
+        "<br> State : "+student.state+"<br> Pincode "+student.pincode);
+
+        document.getElementById("studentDetails").innerHTML="Name :"+student.name+
+         "<br> Age : "+student.age+"<br> Village : "+student.village+
+         "<br> District : "+student.district+"<br> State : "+student.state+
+         "<br> Pincode : "+student.pincode
+    </script>
+</body>
+</html>

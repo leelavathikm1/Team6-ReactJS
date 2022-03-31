@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>document.get element by id method</h4>
+    <div id="waterbottle"></div>
+    <hr>
+    <h4>document.write method</h4>
+    <script>
+        var Waterbottle={
+            material:"Stainless steel",
+            color:"Black knight",
+            capacity:"700ml",
+            brand:"SOLARA",
+            itemWeight:"320 grms",
+        }
+        console.log(Waterbottle)
+        document.write("Materrial : " + Waterbottle.material + 
+        "<br> Color : " + Waterbottle.color +  "<Br> Capacity : "+
+        Waterbottle.capacity + " <br> Brand : " + Waterbottle.brand +
+        "<br> Item Weight : " + Waterbottle.itemWeight);
+        document.getElementById("waterbottle").innerHTML="Material : " + Waterbottle.material + 
+        "<br> Color : " + Waterbottle.color + "<br> Capacity : " + Waterbottle.capacity + 
+        "<br> Brand : " + Waterbottle.brand + "<br> Item weight : " +  Waterbottle.itemWeight
+
+    </script>
+</body>
+</html>

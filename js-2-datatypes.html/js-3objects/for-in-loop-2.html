@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bio"></div>
+    <script>
+        var student={
+            name:"Hari deepthi",
+            age:22,
+            qualification:"bsc",
+            dob:2000,
+            fatherName:"srinivas",
+            motherName:"Radha",
+            village:"akkapalem",
+            city:"tiruvuru",
+        }
+        var details=""
+        for(deepthi in student){
+            console.log(student)
+           // document.write(deepthi + " : " + student[deepthi] + " <br> ")
+           details=details+deepthi + " : " + student[ deepthi ] + "<br>"
+        }
+        document.getElementById("bio").innerHTML=details
+
+    </script>
+</body>
+</html>
