@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function signIn(){}
+        function signUp(){}
+        function search(){}
+
+        var myAllFunctions={
+            signIn:function(){},
+            signUp:function(){},
+            search:function(){
+                document.write("Iam From Object Method")
+            },
+            enter:function(){
+                console.log("Iam from enter function ")
+            }
+        }
+
+        myAllFunctions.enter()
+        myAllFunctions.search()
+        // If afunction is declared inside an object it is called a method
+
+    </script>
+</body>
+</html>
