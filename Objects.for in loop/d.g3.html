@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TVS Jupiter Summary</h1>
+    <h4 id="st"></h4>
+    <script>
+        var scooty={
+            EngineCapacity:"109.7 cc",
+            Mileage :"50 kmpl",
+            KerbWeight:"107 kg",
+            SeatHeight:"765 mm",
+            FuelTankCapacity:"6 litres",
+            MaxPower:"7.37 bhp",
+            price:"60000rs"
+                    }
+                    var result="";
+           for(a in scooty){
+               result=result+a+" : "+scooty[a]+"<br>"
+           }
+           document.getElementById("st").innerHTML=result;
+
+
+    </script>
+</body>
+</html>

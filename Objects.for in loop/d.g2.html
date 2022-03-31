@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Yamaha Ray ZR 125 Summary</h1>
+    <h2 id="st"></h2>
+   <script>
+       var scooty={
+        EngineCapacity:	"125 cc",
+        Mileage :"52 kmpl",
+        KerbWeight:"98 kg",
+        SeaHeight:"785 mm",
+        FuelTankCapacity:"5.2 litres",
+        MaxPower:"8.04 bhp",
+        price:80000,
+            }
+          var result="";
+           for(a in scooty){
+               result=result+a+" : "+scooty[a]+"<br>"
+           }
+           document.getElementById("st").innerHTML=result;
+
+   </script> 
+</body>
+</html>

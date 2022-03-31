@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Honda Activa 6G scooty</h1>
+    <h3 id="st"></h3>
+    <script>
+        var scooty={
+            EngineCapacity:	"109.51 cc",
+            Mileage :	"50 kmpl",
+            KerbWeight	:"107 kg",
+            SeatHeight	:"692 mm",
+            FuelTankCapacity:	"5.3 litres",
+            MaxPower:	"7.68 bhp",
+            price:70000,
+                    }
+                    var value="";
+                    for(s in scooty){
+                        value=value + s +" : "+scooty[s]+"<br>"
+                    }
+                    document.getElementById("st").innerHTML=value;
+    </script>
+</body>
+</html>

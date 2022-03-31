@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hero Electric Flash</h1>
+    <h3 id="st"></h3>
+    <script>
+        var scooty={
+            RidingRange:"50 Km",	
+            TopSpeed:"25 Kmph",	
+            KerbWeight:"87 kg",	
+            Batterychargingtime:"8-10 Hrs",	
+            RatedPower:"250 W",
+            price:"50000rs"
+                    }
+                    var sot="";
+                    for(s in scooty){
+                        sot=sot+s+"  :  "+scooty[s]+"<br>"+"<br>"
+                    }
+                    document.getElementById("st").innerHTML=sot;
+    </script>
+</body>
+</html>
