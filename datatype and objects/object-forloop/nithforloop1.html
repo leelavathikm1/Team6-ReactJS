@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getElementById</h1>
+    <ul id="display"></ul>
+    <hr>
+    <h1>document.write</h1>
+    <script>
+        var myfamily={
+            mother:"latha",
+            father:"babu",
+            brother:"harish",
+            sister:"chandhini",
+            myself:"nithya",
+            husband:"mani",
+            son:"heyansh"
+        }
+        var family="";
+        for(nithfamily in myfamily){
+            // console.log(myfamily)
+            document.write(nithfamily+":"+myfamily[nithfamily]+"<br>")
+            family=family+nithfamily+" : "+myfamily[nithfamily]+"<br>"
+        }
+        document.getElementById("display").innerHTML=family;
+
+    </script>
+</body>
+</html>

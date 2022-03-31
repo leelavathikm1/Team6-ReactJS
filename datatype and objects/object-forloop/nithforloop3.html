@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="move"></ul>
+    <script>
+        var movie={
+            moviename:"bahubali",
+            hero:"prabhas",
+            heroine1:"anushka",
+            heroine2:"thamanna",
+            director:"rajamouli"
+        }
+        var output="";
+        for (rajmovie in movie){
+            document.write(rajmovie+" : "+movie[rajmovie]+"<br>")
+            output=output+rajmovie+" : "+movie[rajmovie]+"<br>"
+        }
+        document.getElementById("move").innerHTML=output
+    </script>
+</body>
+</html>
