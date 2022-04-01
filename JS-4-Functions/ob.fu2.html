@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="would()">click here</button>
+    <button onclick="should()">click me</button>
+    <button onclick="might()"> click</button>
+    <hr>
+    <b id="dis"></b>
+   <script>
+       var dress={
+            name:"Gown",
+            Material :"American Crepe with Floral printed, Inner- Silk",
+            StitchType : "Full Stitched",
+            Work:" Elegant Floral printeded",
+            NeckType: "Round",
+            SleevesType: "Cup Sleeves",
+        }
+        function would(){
+            document.write(
+                "name:"+dress.name+"<br>"+
+                "Material :"+dress.Material+"<br>"+
+                "StitchType :"+dress.StitchType+"<br>"+
+                "Work:"+dress.Work+"<br>"+
+                "NeckType:"+dress.NeckType+"<br>"+
+                "SleevesType:"+dress.SleevesType+"<br>"
+            )
+        } 
+        function should(){
+            document.getElementById("dis").innerHTML="name:"+dress.name+"<br>"+
+                "Material :"+dress.Material+"<br>"+
+                "StitchType :"+dress.StitchType+"<br>"+
+                "Work:"+dress.Work+"<br>"+
+                "NeckType:"+dress.NeckType+"<br>"+
+                "SleevesType:"+dress.SleevesType+"<br>"
+            
+            
+        }
+        
+        function might(){
+            for( d in dress){
+                document.write(d+" : "+dress[d]+"<br>")
+            }
+        }
+
+   </script> 
+</body>
+</html>

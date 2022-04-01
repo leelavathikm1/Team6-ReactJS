@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="first()">click</button>
+    <button onclick="second()">click</button>
+    <button onclick="third()">click</button>
+    <hr>
+<h1 id="mo"></h1>
+
+    <script>
+        var movie={
+            moviee : "The Ice Age Adventures of Buck Wild",
+            Initialrelease : "28 January 2022",
+            Director : "John C. Donkin",
+            Distributedby :" Walt Disney Pictures",
+            Castingdirector : "Micah Dahlberg",
+            Editor : "Braden Oberson",
+            Productioncompanies : "Walt Disney Pictures",
+        }
+        function first(){
+            document.write(
+                "moviee :"+movie.moviee+"<br>"+
+               "Initialrelease :"+ movie.Initialrelease+"<br>"+
+                "Director :"+movie.Director+"<br>"+
+                "Distributedby :"+movie.Distributedby+"<br>"+
+                "Castingdirector :"+movie.Castingdirector+"<br>"+
+                "Editor :"+movie.Editor+"<br>"+
+                "Productioncompanies :"+movie.Productioncompanies+"<br>"
+            )
+        }
+        function second(){
+            document.getElementById("mo").innerHTML="moviee:"+movie.moviee+"<br>"+
+               "Initialrelease:"+ movie.Initialrelease+"<br>"+
+                "Director:"+movie.Director+"<br>"+
+                "Distributedby:"+movie.Distributedby+"<br>"+
+                "Castingdirector:"+movie.Castingdirector+"<br>"+
+                "Editor:"+movie.Editor+"<br>"+
+                "Productioncompanies:"+movie.Productioncompanies+"<br>"
+        }
+        function third(){
+            for(a in movie){
+              document.write(a+" : "+movie[a]+"<br>")  
+            }
+        }
+
+    </script>
+</body>
+</html>

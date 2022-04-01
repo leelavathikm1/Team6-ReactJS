@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="will()">click here</button>
+    <button onclick="shell()">click me</button>
+    <button onclick="well()"> click</button>
+    <hr>
+    <ul id="display"></ul>
+   <script>
+      var book = {
+            Publisher: "GENERAL PRESS",
+            Publishedon: "Nov 10, 2020",
+            Pages: "160",
+            Language: "english",
+            Seller: "Google Ireland Ltd",
+            Genres: "Motivational & Inspirational",
+            price: "101",
+            rating: "4 star",
+        }
+        function will(){
+            document.write("Publisher:" + book.Publisher + "<br>"+"<br>"+
+         "Publishedon:" + book . Publishedon +  "<br>"+"<br>"+
+         " Pages:" + book.Pages +  "<br>"+"<br>"+
+         "Language:" + book.Language+ "<br>"+"<br>"+
+        "Seller:"+book.Seller+ "<br>"+"<br>"+
+         "Genres:"+book.Genres+ "<br>"+"<br>"+
+         "price:"+book.price+ "<br>"+"<br>"+
+         "rating:"+book.rating)
+        } 
+        function shell(){
+            document.getElementById("display").innerHTML="Publisher:" + book.Publisher + "<br>"+"<br>"+
+         "Publishedon:" + book . Publishedon +  "<br>"+"<br>"+
+         " Pages:" + book.Pages +  "<br>"+"<br>"+
+         "Language:" + book.Language+ "<br>"+"<br>"+
+        "Seller:"+book.Seller+ "<br>"+"<br>"+
+         "Genres:"+book.Genres+ "<br>"+"<br>"+
+         "price:"+book.price+ "<br>"+"<br>"+
+         "rating:"+book.rating
+        } 
+        function well(){
+            for( b in book){
+                document.write(b+" : "+book[b]+"<br>")
+            }
+        }
+   </script> 
+</body>
+</html>
