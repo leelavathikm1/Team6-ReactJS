@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="think()">you want to know clic</button>
+    <button onclick="and()">click here</button>
+    <button onclick="grow()"> what i am click here</button>
+    <hr>
+    <b id="display"></b>
+   <script>
+       var Book={
+        Publisher:"Chartwell Books",
+        Publishedon:"Dec 8, 2015",
+        Pages: "245",
+        Language: "english",
+        Seller: "Google Ireland Ltd",
+         Genres: " Inspirational",
+        price: "101",
+        rating: "3 star",
+}
+       
+function think(){
+    document.write("Publisher : "+Book.Publisher+ "<br>"+"<br>"+
+"Publishedon : "+Book.Publishedon+ "<br>"+"<br>"+
+"Pages : "+Book.Pages+ "<br>"+"<br>"+
+"Language : "+Book.Language+ "<br>"+"<br>"+
+"Seller : "+Book.Seller+ "<br>"+"<br>"+
+"price : "+Book.price+ "<br>"+"<br>"+
+"rating : "+Book.rating)
+}
+function and(){
+    document.getElementById("display").innerHTML="Publisher : "+Book.Publisher+ "<br>"+"<br>"+
+"Publishedon : "+Book.Publishedon+ "<br>"+"<br>"+
+"Pages : "+Book.Pages+ "<br>"+"<br>"+
+"Language : "+Book.Language+ "<br>"+"<br>"+
+"Seller : "+Book.Seller+ "<br>"+"<br>"+
+"price : "+Book.price+ "<br>"+"<br>"+
+"rating : "+Book.rating
+}
+function grow(){
+    for(e in Book){
+        document.write(e+" : "+Book[e]+"<br>")
+    }
+}
+ 
+
+   </script> 
+</body>
+</html>
