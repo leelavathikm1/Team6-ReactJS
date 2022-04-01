@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mydocument()">jayasankar</button>
+    <button onclick="myelement()">saikiran</button>
+    <button onclick="myloop()">raju</button>
+    <hr>
+    <div id="sai"></div>
+    <script>
+        var sports={
+            game1:"football",
+            game2:"cricket",
+            game3:"kabbadi",
+            game4:"vollyball",
+            game5:"tennis"
+        }
+        function mydocument(){
+            document.write("game1:"+sports.game1+
+            "<br> game2:"+sports.game2+
+            "<br>game3 :"+sports.game3+
+            "<br> game4:"+sports.game4+
+            "<br> game5 :"+sports.game5)
+        }
+
+        var cricket={
+            player1:"viratkohli",
+            player2:"faf dup",
+            player3:"ab devillirs",
+            player4:"dineshdk",
+            player5:"siraj"
+        }
+        function myelement(){
+            document.getElementById("sai").innerHTML="player1:"+cricket.player1+
+            "<br> player2 :"+cricket.player2+
+            "<br> player3 :"+cricket.player3+
+            "<br> player4 :"+cricket.player4+
+            "<br> player5 :"+cricket.player5
+
+        }
+
+
+        var football={
+            player1:"ronaldo",
+            player2:"messi",
+            player3:"brandon",
+            player4:"edu bedia",
+            player5:"mendoza"
+        }
+        function myloop(){
+            for (b in football){
+                document.write(b+":"+ football[b]+"<br>")
+            }
+            
+        }
+
+        
+    </script>
+</body>
+</html>

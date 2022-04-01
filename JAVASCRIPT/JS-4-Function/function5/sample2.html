@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ramcharan()">RamCharan</button>
+    <button onclick="vijay()">vijay</button>
+    <button onclick="ssrajamouli()">SS Rajamouli</button>
+    <hr>
+    <ul id="thalapathy"></ul>
+
+    <script>
+        var charan={
+         actor:"ramcharan",
+         movie:"Magadheera",
+         song:"dheera",
+         director:"ssrajamouli",
+         music:"mmkeervani"
+        }
+        function ramcharan(){
+            document.write("actor:"+charan.actor+
+            "<br>movie:"+charan.movie+
+            "<br> song:"+charan.song+
+            "<br> director:"+charan.director+
+            "<br> music:"+charan.music)
+        }
+
+
+        var movie={
+         actor:"ThalapathyVijay",
+         movie:"BEAST",
+         song:"ArabicKuthu",
+         director:"DNelson",
+         music:"Anirudh"
+        }
+        function vijay(){
+            document.getElementById("thalapathy").innerHTML="actor:"+movie+
+            "<br>movie:"+vijay.movie+
+            "<br> song:"+vijay.song+
+            "<br> director:"+vijay.director+
+            "<br> music:"+vijay.music
+            document.getElementById("thalapathy").style.color="red"
+            
+        }
+
+        var director={
+            number1:"SSrajamouli",
+            number2:"koratalashiva",
+            number3:"bhoyapatisreenu",
+            number4:"vamshi",
+            number5:"saikiran"
+        }
+
+        function ssrajamouli(){
+            for(c in director){
+                document.write(c +":"+ director[c]+"<br>")
+                
+            }
+        }
+    </script>
+</body>
+</html>

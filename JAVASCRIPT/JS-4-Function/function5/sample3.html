@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="jayasankar()">jayasankar</button>
+    <button onclick="sujatha()">sujatha</button>
+     <button onclick="raju()">raju</button>
+     <hr>
+     <ul id="family"></ul>
+     
+     <script>
+         var student={
+             name:"Raju",
+             college:"sunline",
+             age:23,
+             mobile:6301400247,
+             pincode:517001
+         }
+
+         function jayasankar(){
+             document.write("name:"+student+
+             "<br> college:"+ student.college+
+             "<br> age:"+student.age+
+             "<br> mobile"+student.mobile+
+             "<br> pincode"+student.pincode)
+             
+         }
+
+         var teacher={
+            name:"Raju",
+            college:"sunline",
+            age:23,
+            mobile:6301400247,
+            subject:"english"
+           
+         }
+
+         function sujatha(){
+             document.getElementById("family").innerHTML="name:"+teacher+
+             "<br> college:"+ teacher.college+
+             "<br> age:"+teacher.age+
+             "<br> mobile"+teacher.mobile+
+             "<br> subject"+teacher.subject
+             document.getElementById("family").style.backgroundColor="yellow"            
+
+             
+         }
+         
+         var parent={
+             name:"B Jayasankar",
+             place:"chittoor",
+             age:33,
+             mobile:6301400247,
+             pincode:517001
+         }
+
+         function raju(){
+             for (j in parent){
+                 document.write(j +":"+parent [j]+"<br>")
+             }
+         }
+     </script>
+</body>
+</html>
