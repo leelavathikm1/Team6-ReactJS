@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mydisplay()">hello html</button>
+    <button onclick="ourdisplay()">hello css</button>
+    <button onclick="selfplay()">hellow javascript</button>
+    <hr>
+    <div id="moto"></div>
+    <script>
+        var color={
+            color1:"red",
+            color2:"yellow",
+            color3:"green"
+        }
+        function mydisplay(){
+            document.write("color1 : "+color.color1+
+            "<br>color2 : "+color.color2+
+            "<br>color3 : "+color.color3)
+        }
+        var movie={
+            moviename:"bahubali",
+            hero:"prabhas",
+            heroine:"thamanna",
+            director:"rajamouli"
+        }
+        function ourdisplay(){
+            document.getElementById("moto").innerHTML="moviename : "+movie.moviename+
+            "<br>hero : "+movie.hero+
+            "<br>heroine : "+movie.heroine+
+            "<br>director : "+movie.director
+        }
+        var serial={
+            serialname:"karthikadeepam",
+            hero:"karthik",
+            heroine:"deepa",
+            
+        }
+        function selfplay(){
+            for (b in serial){
+                document.write(b +" : "+ serial[b]+"<br>" )
+            }
+        }
+
+    </script>
+</body>
+</html>
