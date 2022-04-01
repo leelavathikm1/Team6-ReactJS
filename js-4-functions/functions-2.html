@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.named function 
+        function showText(){ 
+        document.write("hii guys this is named function,here we directly assigning name to the function")
+        }
+        showText()
+        
+        // 2.ananymous function
+        var ananymous = function(){
+            console.log("ananymous function it doesnt have any name but we store it to the vairable")
+        }
+        ananymous()
+
+        // 3.
+        var namedToVairable = function hello(){
+            console.log("here in this function we are assigning named function to the vairable ")
+        }
+        namedToVairable()
+        //4.arrow function
+        var show =()=>{
+            console.log("arrow functions")
+        }
+        show();
+
+        //5.self-invoking function
+        (function(){
+            console.log("im from self- invoking")
+        })();
+        //6.immediate-invoking
+        (()=>{
+            console.log("heloo")
+        })()
+    </script>
+</body>
+</html>

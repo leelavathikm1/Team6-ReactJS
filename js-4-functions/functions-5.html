@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. NAMED FUNCTION
+        function displayName(){
+            console.log("named function have the name in the function itself")
+        }
+        displayName()
+        //2.ANANYMOUS FUNCTION
+        var show = function(){
+            document.write( "name stored in vairable for ananymous function" )
+         }
+         show()
+         //3.
+         var store = function named(){
+             console.log( "named function stored in vairable")
+         }
+         store()
+         //4.arrow functions
+         var displayName=()=>{
+             console.log("welcome to javascript")
+         }
+         displayName();
+         //5.self-invoking
+         (function(){
+             console.log("hi all welcome to js")
+         })();
+         //6.immediate-invoking function
+         (()=>{
+            console.log("Welcome to immediate-invoking function")
+         })()
+    </script>
+</body>
+</html>

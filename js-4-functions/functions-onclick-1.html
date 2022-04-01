@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="documentWrite()">document.write</button>
+    <button onclick="getbyid()">getElementById</button>
+    <button onclick="loop()">forinloop</button>
+    <hr>
+    <ul id="dispstudent"></ul>
+
+    <script>
+        var graphicCard={
+            brand:"ASRock",
+            graphicprocessor:"AMD",
+            RAM:"8GB",
+            output:"HDMI,Displayport",
+        }
+     function  documentWrite(){document.write("Brand :" + graphicCard.brand + 
+        "<br> Graphic processor : " + graphicCard.graphicprocessor +
+        "<Br> RAM : " + graphicCard.RAM +
+        "<br> Output :" + graphicCard.output);
+     } 
+  
+        function getbyid(){
+            document.getElementById("dispstudent").innerHTML="Brand : "+ graphicCard.brand +
+        "<br> Graphic processor " + graphicCard.graphicprocessor + "<br> RAM : " + graphicCard.RAM +
+        "<br> Output : " + graphicCard.output
+        }
+
+        function loop(){
+            for(a in graphicCard){
+                document.write(a + " : " + graphicCard[a] + "<br>")
+            }
+        }
+    
+    </script>
+</body>
+</html>

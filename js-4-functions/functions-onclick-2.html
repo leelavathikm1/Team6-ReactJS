@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="documentDetails()">click</button>
+    <button onclick="idDetails()">idclick</button>
+    <button onclick="loopDetails()">loopclick</button>
+    <hr>
+    <ul id="idclick"></ul>
+    <script>
+           var mobile={
+            modelName:"Samsung galaxy Z Flip3",
+            wirelessCarrier:"unlocked for all ",
+            brand:"Samsung",
+            formFactor:"flip",
+            memory:"128 GB",
+            os:"Android 11.0",
+            color:"Cream",
+            simCard:"dual sim",
+        }
+        function documentDetails(){
+            document.write("Model Name :  " + mobile.modelName + "<br> Wireless Carrier : "  +
+        mobile.wirelessCarrier + "<br> Brand : " + mobile.brand + "<br> Form Factor : " +
+        mobile.formFactor + "<br> Memory : " + mobile.memory + "<br> OS : " + mobile.os +
+        "<br> Color : " + mobile.color + "<br> Sim card :" + mobile.simCard   );
+
+        }
+        function idDetails(){
+            
+        document.getElementById("idclick").innerHTML="Model Name :  " + mobile.modelName + "<br> Wireless Carrier : "  +
+        mobile.wirelessCarrier + "<br> Brand : " + mobile.brand + "<br> Form Factor : " +
+        mobile.formFactor + "<br> Memory : " + mobile.memory + "<br> OS : " + mobile.os +
+        "<br> Color : " + mobile.color + "<br> Sim card :" + mobile.simCard 
+
+        }
+        function loopDetails(){
+            for(a in mobile){
+                document.write(a + " : " + mobile[a] + " <br> ")
+            }
+        }
+    </script>
+</body>
+</html>

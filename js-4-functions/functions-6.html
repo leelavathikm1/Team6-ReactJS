@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.named function
+        function named(){
+            console.log("welcome to named functions in js")
+        }
+        named()
+        //2.ananymous function
+        var ananymous=function(){
+            console.log("welcome to ananymous function in js")
+        }
+        ananymous()
+        //3
+        var show=function named(){
+            document.write("welcome to js")
+        }
+        show()
+        //4 arrow function
+        var arrow=()=>{ 
+            console.log("welcome to arrow function in js")
+        }
+        arrow();
+        //5. self-invoking function
+        (function(){
+            console.log("welcome to self-invoking function")
+        })();
+        //6.immediate-invoking
+        (()=>{
+            console.log("welcome to immediate invoking")
+        })()
+    </script>
+</body>
+</html>
