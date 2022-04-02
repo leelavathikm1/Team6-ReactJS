@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+   
+    <button onclick="showObjectgetElementById()"> Displya Document Write </button>
+    <button onclick="documentWrite()"> Show ObjectgetElementById</button>
+    <button onclick="showObjectforinLoop()">Show ObjectForInLoop</button>
+    <hr>
+    <ul id="myUl"></ul>
+
+    <script>
+        var college={
+            name: "SVL JR College",
+            state: "Andhra",
+            city: "Avanigadda",
+            mobile: 984775613,
+            pincode: 522102,
+        };
+        function documentWrite(){
+            document.write( "Name : " + college.name +
+        "<br> State : " + college.state + 
+        "<br> city : " + college.city + 
+        "<br> Mobile : " + college.Mobile + 
+        "<br> Pincode : " + college.pincode);
+
+        }
+        function showObjectgetElementById(){            
+        document.getElementById("myUl").innerHTML= "Name : " + college.name +
+        "<br> State : " + college.state + 
+        "<br> city : " + college.city + 
+        "<br> Mobile : " + college.Mobile + 
+        "<br> Pincode : " + college.pincode;
+        }
+        function showObjectforinLoop(){
+            for(a in college){document.write(a + " : " + college[a] + "<br>")
+        }
+        }
+
+    </script>
+</body>
+</html>

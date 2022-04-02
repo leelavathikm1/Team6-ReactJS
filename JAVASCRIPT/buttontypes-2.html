@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="documentwrite()"> Display Document.wirte</button>
+    <button onclick="showObjectgetElementById()">Displya getElementById</button>
+    <button onclick="showObjectforinLoop()"> Disply showObjectforinLoop</button>
+    <hr>
+    <ul id="dispStudent"></ul>
+    <script>
+        var student={
+            name:"srividy",
+            phone: 984455789,
+            city: "Hyderabad",
+            village: "Nijampet",
+            pincode: 500090
+        };
+        function documentwrite(){
+            document.write("Name : " + student.name + 
+            "<br> phone : " + student.phone + 
+            "<br> city : " + student.city +
+            "<br> village : " + student.village +
+            "<br> pincode : " + student.pincode
+            ); 
+        }
+
+        function showObjectgetElementById(){
+            document.getElementById("dispStudent").innerHTML="Name : " + student.name + 
+            "<br> phone : " + student.phone + 
+            "<br> city : " + student.city +
+            "<br> village : " + student.village +
+            "<br> pincode : " + student.pincode;
+            
+        }
+        function showObjectforinLoop(){
+            for(srividya in student){
+                document.write(srividya + " : " + student[srividya]+ "<br>")
+            }
+        }
+    </script>
+    
+</body>
+</html>

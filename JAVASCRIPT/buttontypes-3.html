@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="documentWrite()"> Displya Document Write</button>
+    <button onclick="showObjectgetElementById()"> Display getElementById</button>
+    <button onclick="showObjectforinLoop()"> Disply for in loop</button>
+    <hr>
+    <tabel id="displayMovie"></tabel>
+    <script>
+        var movie={
+            name: "RRR",
+            writer: "Vijayendra Prasad",
+            director: "S.S. Rajamouli",
+            producer: "D. V. V. Danayya",
+            heroes: "NTR Ramcharan",
+            heroine: "Alia Bhatt",
+        };
+        function documentWrite(){
+            document.write("Name : " + movie.name +
+        "<br> Writer : " + movie.writer + 
+        "<br> Director : " + movie.director +
+        "<br> Producer : " + movie.producer +
+        "<br> Heroes : " + movie.heroes + 
+        "<br> Heroine : " + movie.heroine
+        );
+        }
+        function showObjectgetElementById(){
+            document.getElementById("displayMovie").innerHTML="Name : " + movie.name +
+        "<br> Writer : " + movie.writer + 
+        "<br> Director : " + movie.director +
+        "<br> Producer : " + movie.producer +
+        "<br> Heroes : " + movie.heroes + 
+        "<br> Heroine : " + movie.heroine;
+        }
+        function showObjectforinLoop(){
+            for(a in movie){
+                document.write(a + " : " + movie[a] + "<br>")
+            }
+        }
+    </script>
+    
+</body>
+</html>
