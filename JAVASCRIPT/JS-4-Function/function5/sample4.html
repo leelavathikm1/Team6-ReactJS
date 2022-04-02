@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="aruna()">aruna</button>
+    <button onclick="lithisha()">lithisha</button>
+    <button onclick="sireesha()">sireesha</button>
+
+    <hr>
+    <ul id="jaisai"></ul>
+    <ul id="saijai"></ul>
+    <ul id="saichinna"></ul>
+
+    <script>
+        var person = {
+            name: "Jayasankarsai",
+            father: "Jayasankar",
+            mother: "Sujatha",
+            DOB: "23/04/0000",
+            address: "chittoor",
+            pincode: "517001"
+        }
+
+        function aruna() {
+            document.getElementById("jaisai").innerHTML="name:" + person.name +
+                "<br> father:" + person.father +
+                "<br> mother:" + person.mother +
+                "<br> DOB:" + person.DOB +
+                "<br> address:" + person.address +
+                "<br> pincode:" + person.pincode
+        }
+        document.getElementById("jaisai").style.color="red"       
+        document.getElementById("jaisai").style.textAlign="center"
+
+
+
+
+
+        var child={
+        name:"lithisha",
+            father:"Jayasankar",
+            mother:"Sujatha",
+            DOB:"23/04/0000",
+            address:"chittoor",
+            pincode:"517001" 
+    }
+     function lithisha(){
+         document.getElementById("saijai").innerHTML=
+            "name:" + child.name +
+                "<br> father:" + child.father +
+                "<br> mother:" +child.mother +
+                "<br> DOB:" + child.DOB +
+                "<br> address:" + child.address +
+                "<br> pincode:" + child.pincode            
+         
+     }     
+     document.getElementById("saijai").style.color="blue"    
+     document.getElementById("saijai").style.textAlign="center"
+
+
+     var child1={
+            name:"sireesha",
+            father:"Jayasankar",
+            mother:"Sujatha",
+            DOB:"23/04/0000",
+            address:"chittoor",
+            pincode:"517001" 
+     }
+
+     function sireesha(){
+        document.getElementById("saichinna").innerHTML=
+         "name:" + child1.name +
+                "<br> father:" + child1.father +
+                "<br> mother:" +child1.mother +
+                "<br> DOB:" + child1.DOB +
+                "<br> address:" + child1.address +
+                "<br> pincode:" + child1.pincode 
+
+     }
+     document.getElementById("saichinna").style.color="green"
+     document.getElementById("saichinna").style.textAlign="center"
+    </script>
+</body>
+
+</html>
