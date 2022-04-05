@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var movies=["harry potter","RRR","conjuring"]
+        movies.push("arya");
+        movies.unshift("bahubali");
+        movies.pop();
+        movies.shift();
+        movies.splice(0,0, "beemlanayak");
+        movies.sort();
+        movies.reverse();
+      //  document.write(movies)
+        for (a=0;a < movies.length;a++) {
+            console.log(movies[a]);
+        }
+        var displayMyNames=movies.find(function(films){
+            return films.length ==3;
+        });
+        var displayMyNames=movies.filter((films)=>{
+            return films.length ==5;
+        });
+        document.write(displayMyNames);
+        
+      
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var names=["deepthi","jyothi","vishnu","haritha"]
+        names.push("radha")
+        names.unshift("srinu")
+        names.pop();
+        names.shift();
+        names.splice(0,0,"amma");
+        names.sort();
+        names.reverse();
+        console.log(names)
+        var displayMyNames =names.find(function(myname){
+            return myname.length == 6;
+        });
+        var displayMyNames = names.filter((myname)=>{return myname.length ==5;});
+        document.write(displayMyNames);
+        for (a=0;a<names.length;a++){
+            console.log(names[a])
+        }
+    </script>
+</body>
+</html>

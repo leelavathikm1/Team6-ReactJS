@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var friends=["mahitha","padmini","harika","sai","anila"]
+        friends.push("teja");
+        friends.unshift("rohit");
+        friends.pop();
+        friends.shift();
+        friends.splice(1,0,"deepthi");
+        friends.sort();
+        friends.reverse();
+        for (f=0; f < friends.length;f++){
+            console.log(friends[f]);
+        }
+        //es6
+        var displayMyNames=friends.find(function(myfriends){
+            return myfriends.length == 7;
+        });
+        var displayMyNames=friends.filter((myfriends)=>{
+            return myfriends.length ==7;
+        })
+        document.write(displayMyNames)
+       // document.write(friends)
+    </script>
+</body>
+</html>

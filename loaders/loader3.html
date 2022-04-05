@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+      font-family: "Fredoka one",cursive;  
+    }
+     html{
+         font-size: 52.5%; 
+    } 
+    .main-div{
+        width: 100vw;
+        height:100vh;
+        background-color: rgb(17, 16, 16);
+        display: grid;
+        place-items: center;
+    }
+    h1{
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .center-div{
+        position: relative;
+        width: 10rem;
+        height: 10rem;
+    }
+    div.rot{
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        border-right: 0.5rem solid #37f108;
+        border-radius: 50%;
+        animation: rot 3s linear infinite;
+
+    }
+    @keyframes rot{
+        0%{
+            transform: rotate(0deg);
+        }
+         50%{
+            transform: rotate(90deg);
+        } 
+        80%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="center-div">
+            <div class="rot"></div>
+            <h1>loading</h1>
+        </div>
+    </div>
+</body>
+</html>
