@@ -9,7 +9,7 @@
   <body>
     <!-- ECMAScript Europian Computers Manufacturing Association -->
     <script>
-      var students = ["Vidya", "Sai", "Nithya", "Leela", "Mahesh"];
+      // var students = ["Vidya", "Sai", "Nithya", "Leela", "Mahesh"];
       //   console.log(students);
 
       //   students.push("Akalya");  Push method add value at the end of the array
@@ -34,8 +34,36 @@
       //   });
 
       //   var dispMyName = () => {};Call back function means passing a function inside a method
+      // document.write(dispMyName);
+      var flowers = [
+        "Rose",
+        "lilly",
+        "Lotus",
+        "Jasmine",
+        "MarieGold",
+        "Hybiscus",
+      ];
+      // forEach Method
+      // flowers.forEach(function (flor, i) {
+      //   document.write(i + " . " + flor + "<br>");
+      // });
+      // Map method will help to create a new array with existing array values
+      // var florPrice = flowers.map((flor) => {
+      //   return flor + "@Price.com" + "<br>";
+      // });
+      // document.write(florPrice);
 
-      document.write(dispMyName);
+      // console.log(florPrice);
+
+      // let checkFlor = flowers.every(function (flor) {
+      //   return flor.length >= 10;
+      // });
+      // console.log(checkFlor);
+
+      let checkFlor = flowers.some(function (flor) {
+        return flor.length >= 9;
+      });
+      console.log(checkFlor);
     </script>
   </body>
 </html>
