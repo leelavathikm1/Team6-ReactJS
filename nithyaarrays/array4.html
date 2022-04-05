@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fruits=["apple","banana","straberry",]
+        // fruits.push("guava")
+        // fruits.unshift("mango")
+        // fruits.pop()
+        // fruits.shift()
+        // fruits.splice(3,0,"watermelon")
+        // fruits.sort()
+        // fruits.reverse()
+        // for(a=0;a>fruits.length;a++){
+        //     console.log(fruits[a])
+        // }
+        // var disfruits=fruits.find(function(myfruits){
+        //     return myfruits.length==5
+        // })
+        //es-6
+        var disfruits=fruits.filter((myfruits)=>{
+            return myfruits.length==5
+        })
+        
+        document.write(disfruits);
+    </script>
+</body>
+</html>
