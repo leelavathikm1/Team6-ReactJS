@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var worker =["sai","chinnoda","cheeku","kiran","vijay","akhil"];
+
+        console.log(worker);
+        for (b=0; b<worker.length;b++){
+           console.log(worker[b])
+        }
+
+        // var worker=worker. find(function(worker){
+        //     return worker.length==6
+        // })
+        var worker=worker.filter((worker)=>{
+            return worker.length==5
+        })
+
+
+        document.write(worker)
+        
+    </script>
+</body>
+</html>
