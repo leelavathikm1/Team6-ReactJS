@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tree=["oak","beech","bottle","spruce","palm","cedar"]
+        console.log(tree);
+        tree.push("birch")
+        tree.pop()
+        tree.unshift("willow")
+        tree.shift()
+        tree.sort()
+        tree.reverse()
+        for(a=0;a<tree,length;a++ ){
+            console.log(tree[a])  
+        }
+        var tree=tree.find(function(name){
+            return name.length==5;
+        })
+        var tree=tree.filter((tree)=>{
+            return tree.length==5
+        })
+        document.write(tree);
+    </script>
+</body>
+</html>
