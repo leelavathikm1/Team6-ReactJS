@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- ECMAScript Europian Computers Manufaturing Association -->
+    <script>
+        var animal = ["Tiger", "Cat", "Elephant", "Line"];
+
+        console.log(animal);
+
+        animal.push("Dog");
+        animal.unshift("Rabbit");
+        animal.shift();
+        animal.pop();
+        animal.splice(2);
+        animal.sort();
+        animal.reverse();
+
+        for(a = 0; a < animal.length; ++a){
+            console.log(animal[a])
+        };
+
+        var animal = animal.find(function (myAnimals) {
+            return myAnimals.length == 4;
+        });
+
+        //ES6
+        var animal = animal.filter((myAnimals) => {
+            return myAnimals.length == 7;
+        });
+
+        document.write(animal);
+    </script>
+</body>
+</html>

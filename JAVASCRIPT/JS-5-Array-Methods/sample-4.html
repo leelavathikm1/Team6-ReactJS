@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ECMASCRIPT Eropian computers Manufaturing Association -->
+    <script>
+        var tourist = ("Taj mahal", "Ooty", "Kerala", "Hyderabad");
+        console.log(tourist);
+
+        tourist.push("Tirupathi");
+        tourist.unshift("Delhi");
+        tourist.shift();
+        tourist.pop();
+        tourist.slice(3, 0, "Chennai");
+        tourist.sort();
+        tourist.reversel();
+         for(R = 0; R<tourist.length; ++R) {
+             console.log(tourist[R]);
+         };
+
+         var tourist = tourist(function(mytourist){
+             return mytourist.length ==6;
+         });
+        var tourist = tourist((mytourist) => {
+            return mytourist.length == 8;
+        });
+        document.write(tourist);
+    </script>
+</body>
+</html>

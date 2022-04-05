@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ECMASCRIPT Europian computers Manufaturing Association -->
+
+    <script>
+        var friends = ["Sriniasu", "Ravi", "Krishna", "Mamatha"];
+
+        console.log(friends);
+
+        friends.push("Srividya");
+        friends.unshift("Manikanta");
+        friends.shift();
+        friends.pop();
+        friends.slice(2, 0, "Vishnu");
+        friends.sort();
+        friends.reverse();
+
+        for(e=0; e < friends.length; ++e){
+            console.log(friends[e])
+        };
+        var friends = friends.find(function (myfriends){
+            return myfriends.length == 7;
+        });
+        //ES6
+        var friends = friends.filter((myfriends) => {
+            return myfriends.length ==4;
+        })
+        document.write(friends);
+    </script>
+    
+</body>
+</html>

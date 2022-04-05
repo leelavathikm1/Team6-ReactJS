@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ECMASCRIPT Europian Computers Manufaturing Association -->
+    <script>
+        var colours = ["Red", "Blue", "Green", "Yellow" ];
+        // console.log(Flowers);
+
+        colours.push("Pink");
+        colours.unshift("LightGreen");
+        colours.shift();
+        colours.pop();
+        colours.splice(2, 1, "Black");
+        colours.sort();
+        colours.reverse();
+
+         for(i =0; i < colours.length; i++){
+             console.log(colours[i]);
+         }
+         var colours = colours.find(function(myColours) {
+             return myColours.length == 7;
+         });
+        
+        //Es6
+        var colours = colours.filter((myColours) => {
+            return myColours.length == 4;
+        });
+
+        document.write(colours);
+
+    </script>
+</body>
+</html>
