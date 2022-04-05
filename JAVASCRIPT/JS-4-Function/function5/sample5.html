@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <button onclick="student()">Student</button>
     <button onclick="dady()">Parents</button>
@@ -14,62 +16,66 @@
     <ul id="vijay"></ul>
     <ul id="charan"></ul>
     <ul id="ram"></ul>
-<ul id="ram"></ul>
+    <ul id="ram"></ul>
     <script>
-        var goodboy={
-            name:"teliyadhu",
-            rollno:26,
-            class:"3rd bcom",
-            college:"pvkn",
-            place:"chittoor"
+        var goodboy = {
+            name: "teliyadhu",
+            rollno: 26,
+            class: "3rd bcom",
+            college: "pvkn",
+            place: "chittoor"
         }
 
-        function student(){
-            document.getElementById("vijay").innerHTML="name:"+goodboy.name+
-            "<br> rollno:"+goodboy.rollno+
-            "<br> class:"+goodboy.class +
-            " <br> college"+goodboy.college+
-            " <br> place:"+goodboy.place}
-            document.getElementById("vijay").style.backgroundColor="yellow"                    
-            document.getElementById("vijay").style.textAlign="center"
-
-            var parent={
-            name:"sollamtaen",
-            rollno:36,
-            class:"phd",
-            college:"pvkn",
-            place:"chittoor"
+        function student() {
+            document.getElementById("vijay").innerHTML = "name:" + goodboy.name +
+                "<br> rollno:" + goodboy.rollno +
+                "<br> class:" + goodboy.class +
+                " <br> college" + goodboy.college +
+                " <br> place:" + goodboy.place
         }
-        
-        function dady(){
-            document.getElementById("charan").innerHTML="name:"+parent.name+
-            "<br> rollno:"+parent.rollno+
-            "<br> class:"+parent.class +
-            " <br> college"+parent.college+
-            " <br> place:"+parent.place}
-            document.getElementById("charan").style.color="red"
-            document.getElementById("charan").style.textAlign="center"        
-            document.getElementById("charan").style.backgroundColor="pink"
+        document.getElementById("vijay").style.backgroundColor = "yellow"
+        document.getElementById("vijay").style.textAlign = "center"
 
-            
-
-            var madam={
-            name:"madam",
-            rollno:36,
-            class:"phd",
-            college:"pvkn",
-            place:"chittoor"
+        var parent = {
+            name: "sollamtaen",
+            rollno: 36,
+            class: "phd",
+            college: "pvkn",
+            place: "chittoor"
         }
 
-        function teacher(){
-            document.getElementById("ram").innerHTML="name:"+madam.name+
-            "<br> rollno:"+madam.rollno+
-            "<br> class:"+madam.class +
-            " <br> college"+madam.college+
-            " <br> place:"+madam.place}
-            document.getElementById("ram").style.backgroundColor="skyblue"           
-            document.getElementById("ram").style.textAlign="center"
-        
+        function dady() {
+            document.getElementById("charan").innerHTML = "name:" + parent.name +
+                "<br> rollno:" + parent.rollno +
+                "<br> class:" + parent.class +
+                " <br> college" + parent.college +
+                " <br> place:" + parent.place
+        }
+        document.getElementById("charan").style.cssText="color:red; text-align:center;background:pink"
+
+       
+
+
+
+        var madam = {
+            name: "madam",
+            rollno: 36,
+            class: "phd",
+            college: "pvkn",
+            place: "chittoor"
+        }
+
+        function teacher() {
+            document.getElementById("ram").innerHTML = "name:" + madam.name +
+                "<br> rollno:" + madam.rollno +
+                "<br> class:" + madam.class +
+                " <br> college" + madam.college +
+                " <br> place:" + madam.place
+        }
+        document.getElementById("ram").style.backgroundColor = "skyblue"
+        document.getElementById("ram").style.textAlign = "center"
+
     </script>
 </body>
+
 </html>
