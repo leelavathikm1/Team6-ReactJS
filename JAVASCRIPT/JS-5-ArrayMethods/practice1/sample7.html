@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var city =["hydrabad","banglore","chennai","kerala","pandichery"];
+
+        console.log(city)
+        city.push("vizag");
+        city.unshift("delhi");
+
+        city.pop();
+        city.shift();
+
+        city.splice(1,0, "mumbai")
+
+        city.sort();
+        city.reverse();
+        
+        for (a= 0; a <city.length;a++){
+            console.log(city[a]);
+        }
+
+        // var city = city. find(function(mycity){
+        //     return mycity.length==6
+        // }) 
+
+        var city=city.filter((mycity)=>{
+            return mycity.length==8
+        })
+
+
+        document.write(city);
+    </script>
+</body>
+</html>

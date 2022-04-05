@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var movies =["RRR","Beast","KGF","Acharaya","Master"];
+
+        console.log(movies);
+
+        movies.push("Bigil");
+        movies.unshift("Sarkar");
+
+        movies.pop();
+        movies.shift();
+
+        movies.splice(2,0,"Mersal");
+
+        movies.sort();
+        movies.reverse();
+
+        for(m=0;m<movies.length;m++){
+            console.log(movies[m])
+        }
+
+
+
+        // var movies=movies.find(function(mymovies){
+        //     return mymovies.length==6
+        // })
+        // ES-6
+
+        var movies=movies.filter((mymovies)=>{
+            return mymovies.length==3
+        })
+
+        
+
+
+        document.write(movies)
+    </script>
+</body>
+</html>
