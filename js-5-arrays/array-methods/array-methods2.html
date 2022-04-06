@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="displayCities"></ul>
+    <script>
+        var cities=["Hyderabad","Mumbai","Banglore","Pune","Chennai"]
+        //for each method
+        cities.forEach(function(explore,i){
+            document.write(i +"."+ explore +"<br>")
+        });
+        //map method
+        var areas=cities.map((explore,i)=>{
+            return i+"." +explore  + " welcomes you <br>"
+        });
+        document.write(areas);
+        document.getElementById("displayCities").innerHTML=areas;
+        //every method
+        var list =cities.every(function(explore){
+            return explore.length >=6;
+        });
+        console.log(list);
+        //some 
+        var list =cities.some(function(explore){
+            return explore.length >=8;
+        })
+        console.log(list)
+    </script>
+</body>
+</html>

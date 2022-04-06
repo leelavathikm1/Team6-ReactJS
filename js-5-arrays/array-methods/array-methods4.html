@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="showColors"></ol>
+    <script>
+        var colors=["red","blue","yellow","green","orange","pink"]
+        //for each method
+        colors.forEach(function(show ,i){
+            document.write(i+ " . " + show +"<Br>")
+        });
+        //map method
+        var checkList=colors.map((show ,i)=>{
+            return i+":"+ show +" is a color <br>"
+        })
+        document.write(checkList);
+        document.getElementById("showColors").innerHTML=checkList
+        //every method
+        var list=colors.every(function(show){
+            return show.length >=4;
+        })
+        console.log(list)
+        //some
+        var list=colors.some(function(play){
+            return play.length >=5;
+        })
+        console.log(list)
+    </script>
+</body>
+</html>

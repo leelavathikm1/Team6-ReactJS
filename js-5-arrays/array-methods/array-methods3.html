@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="displayGames"></ol>
+    <script>
+        var games=["volleyball","football","cricket","Hockey"]
+        //for each method
+        games.forEach(function(play,i){
+            document.write(i+ " . " +play+"<br>")
+        })
+        //map method
+        var sports=games.map((play,i)=>{
+            return i+"."+ play +"is a game <br>"
+        })
+        document.write(sports)
+        document.getElementById("displayGames").innerHTML=sports;
+        //every method
+        var checkList=games.every(function(play){
+            return play.length >=4
+        })
+        console.log(checkList);
+        //some method //both the every and some methods are same
+        var checkList=games.some(function(play){
+            return play.length >=6;
+        })
+        console.log(checkList);
+    </script>
+    <body>
+</html>

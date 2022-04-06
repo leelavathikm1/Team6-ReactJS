@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="displayNames"></ul>
+    <script>
+        var names=["deepthi","jyothi","vishnu","mahitha","anila"]
+        //for each method
+        names.forEach(function(call,i){
+            document.write(i + " : " + call + " <br> ")
+        })
+        //map
+        var pick=names.map((call,i)=>{
+            return i + " : "  + call + " is a name <br>"
+        })
+        document.write(pick);
+        document.getElementById("displayNames").innerHTML=pick
+        //every method
+        var pick=names.every(function(call){
+            return call.length >=4;
+        })
+        console.log(pick);
+        //some
+        var pick=names.some(function(call){
+            return call.length >=6;
+        })
+        console.log(pick);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="displayFruits"></ul>
+    <script>
+        var fruits=["apple","grapes","banana","sapota","mango"]
+        //for each method
+        fruits.forEach(function(show,i){
+            document.write(i + " . " + show + " <br> ")
+        });
+        //map method
+        var eat=fruits.map((show ,i)=>{
+            return i+show + " is a fruit <br>"
+        });
+        document.write(eat)
+        document.getElementById("displayFruits").innerHTML=eat;
+        //every method
+        var eat=fruits.every(function(show){
+            return show.length >=4
+        })
+        console.log(eat);
+        //some
+        var eat=fruits.some(function(show){
+            return show.length >=5;
+        })
+        console.log(eat)
+    </script>
+</body>
+</html>
