@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       var vitamins=["vitamin A","B vitamins","vitamin C",
+       "vitamin D","vitamin E","vitamin K"]
+      
+     vitamins.forEach(function(name,v){
+         document.write (v+" . "+name+"<br>") 
+       })
+     document.write(name)
+        console.log(name)
+    var name=vitamins.map((hello)=>{
+     return hello+"@vitamin details.com"+"<br>" 
+    })
+    document.write(name)
+    console.log(name)
+    let name=vitamins.every(function(first){
+        return first.length >=3;
+    })
+    console.log(name)
+    let firstname=vitamins.some(function(second){
+        return second.length >=22;
+    })
+    console.log(firstname)
+   </script> 
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nature=[
+            "earth","water","fire","air","space"
+        ]
+        nature.forEach(function(name,a){
+            document.write(a + " . "+name+"<br>")
+        })
+        document.write(name);
+        console.log(name);
+        var name=nature.map((name)=>{
+            return name+"@ details.com"+"<br>"
+        })
+        document.write(name);
+        console.log(name);
+        let newname=nature.every(function(name){
+            return name.length >=2;
+        })
+        console.log(newname)
+        let firstname=nature.some(function(name){
+            return name.length>=3;
+        })
+        console.log(firstname);
+    </script>
+</body>
+</html>
