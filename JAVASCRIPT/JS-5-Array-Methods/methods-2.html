@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="BestVeges"></ul>
+    <script>
+        var vegetables = ["Carrot", "Onion", "Beetroot", "Cucumber", "Potato"];
+
+        //foreach method
+        vegetables.forEach(function(veges, i){
+            document.write(i + " . " + veges + " Fresh veges <br>");
+         });
+         //map method
+        var vegesPrice = vegetables.map((veges) =>{
+            return veges + " FreshVeges" + "<br>";
+        });
+        document.write(vegesPrice);
+        console.log(vegesPrice);
+        //getElementById
+        document.getElementById("BestVeges").innerHTML=vegesPrice;
+        let checkveges = vegetables.every(function (veges){
+            return veges.length >= 9;
+        });
+        console.log(checkveges);
+        let vegesNames = vegetables.some((veges)=>{
+            return veges.length >=5;
+        });
+        console.log(vegesNames);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="titles"></div>
+    <script>
+        var movies = ["RRR", "Temper", "Jai Lava Kusa", "Badsha"];
+        //foreach method
+        movies.forEach(function(movie, i){
+            document.write(i + " . " + "movie" + "<br>");
+        });
+        //map method
+        var moviePrice = movies.map((movie)=>{
+            return movie + "@movie Price" + "<br>";
+        });
+        document.write(moviePrice);
+        console.log(moviePrice);
+        document.getElementById("titles").innerHTML=moviePrice;
+         
+        let checkmovie = movies.every(function(movie){
+            return movie.length >=11;
+        });
+        console.log(checkmovie);
+        let checkmovies = movies.some((moive)=>{
+            return moive.length >=3;
+        });
+        console.log(checkmovies);
+    </script>
+</body>
+</html>

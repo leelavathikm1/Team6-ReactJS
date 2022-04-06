@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="animalS"></table>
+    <script>
+        var animal = ["Tiger", "Cat", "Elephant", "Line"];
+        //foreach method
+        animal.forEach(function (breed, i){
+            document.write(i + " . " + breed + "<br>");
+        });
+        //map method
+        var animalPrice = animal.map((breed)=>{
+            return breed + "prices" + "<br>";
+        });
+        document.write(animalPrice);
+        console.log(animalPrice);
+        document.getElementById("animalS").innerHTML=animalPrice;
+        let checkanimals = animal.every(function(breed){
+            return breed.length >=8; 
+        });
+        console.log(checkanimals);
+        let checkanimal = animal.some(function(breed){
+            return breed.length >=3;
+        });
+        console.log(checkanimal);
+    </script>
+</body>
+</html>

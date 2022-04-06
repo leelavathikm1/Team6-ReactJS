@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paints"></div>
+    <script>
+        var colours = ["Red", "Green", "Pink", "Yellow" ];
+        //ForEach Method
+        colours.forEach(function (colors, i){
+            document.write(i + " . " + colors + "<br>");
+        });
+        //Map method
+        var colorpick = colours.map((colors) => {
+          return colors + " light colour" + "<br>";
+        });
+        document.write(colorpick);
+        console.log(colorpick);
+        //getElementById
+        document.getElementById("paints").innerHTML=colorpick;
+        
+        let nameColors = colours.every(function (colors){
+            return colors.length >= 6;
+        });
+        console.log(nameColors);
+
+        let checkColors = colours.some(function (colors){
+            return colors.length >= 4;
+        }) ;
+        console.log(checkColors);
+
+    </script>
+</body>
+</html>

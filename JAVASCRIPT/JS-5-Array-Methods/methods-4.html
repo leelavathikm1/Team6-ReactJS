@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="Places"></ul>
+    <script>
+        var tourist = ["Tirupathi", "Ooty", "Kerala", "Hyderabad"];
+
+        //foreach method
+        tourist.forEach(function (tour, i){
+            document.write(i + " . " + "tour" + " <br>");
+        });
+        //map method
+        var tourPrice = tourist.map ((tour)=>{
+            return tour + "Journey Price" + "<br>";
+        });
+        document.write(tourPrice);
+        console.log(tourPrice);
+        document.getElementById("Places").innerHTML=tourPrice;
+
+        let checktour = tourist.every(function(tour){
+            return tour.length >=9;
+        });
+        console.log(checktour)
+        let checktours = tourist.some((tour)=>{
+            return tour.length >=4;
+        });
+        console.log (checktours)
+    </script>
+</body>
+</html>
