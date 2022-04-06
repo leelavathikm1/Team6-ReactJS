@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sports=["cricket","vollyball","hocky","tennis","kabbadi"]
+
+        sports . forEach(function(game ,i){
+            document.write( i +"."+ game +"<br>")
+        })
+        console.log(sports)
+
+        var mygame= sports. map((game ,i)=>{
+            return i+"."+ game+"game1"+"<br>";
+        })
+        document.write(mygame)
+        console.log(mygame)
+
+        // var mygame=sports .every(function(game){
+        //     return game . length>4;
+        // })
+        // document.write(mygame)
+        // console.log(mygame)
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var actors =[
+            "vijay",
+            "jeeva",
+            "surya",
+            "gvprakash",
+            "dhansuh",
+            "ajith"
+        ];
+        actors . forEach(function(tamil ,i){
+            document.write(i +" . " + tamil +"<br> ")
+        }) 
+        console.log(actors)
+
+                var movie=actors .map((tamil ,i)=>{
+            return i +"." + tamil + "tamilactor" +"<br>" ;
+        })
+        document.write(movie)
+          
+        var movie = actors.every(function(tamil){
+            return tamil.length>=5
+        })
+         console.log(movie)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person=["vijay","akhil","mahesh","kishore","bharath","samraj"]
+
+        person .forEach(function(best ,i ){
+            document.write(i +best +"<br>");
+        })
+
+        let mybest=person.map((best ,i)=>{
+            return i+"."+ best+"friend"+"<br>";
+        })
+        document.write(mybest)
+
+      let sai=person.every(function(best){
+          return best.length>=5
+      })
+      console.log(sai)
+    </script>
+</body>
+</html>

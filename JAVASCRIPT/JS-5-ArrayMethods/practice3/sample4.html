@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var places =[
+            "goa",
+            "jaipur",
+            "munnur",
+            "ooty",
+            "manali"
+            ,"ladak",
+            "coorag"]
+
+        places . forEach(function(fav, i){
+            document.write (i +" . " +fav +"<br>")
+        })
+        console.log(places)
+        //
+        var myfav=places.map((fav ,i)=>{
+            return i +"."+  fav+"beautifulplace"+"<br>";
+        })
+        document.write(myfav)
+
+        let myfav =places.some(function(fav){
+            return fav .length>=3;
+        })
+        console.log(myfav)
+    </script>
+</body>
+</html>

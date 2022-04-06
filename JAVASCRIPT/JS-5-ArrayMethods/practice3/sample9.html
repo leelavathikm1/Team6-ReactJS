@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="chinnoda"></ul>
+   <script>
+       var cricket=["virat","kohli","dhoni","devillirs","siraj","shahabaz"]
+
+       cricket.forEach(function(player){
+           document.write(player +"<br>")
+       })
+       console.log(cricket)
+
+       var cricketprice=cricket .map((player ,i)=>{
+           return i+"."+ player+"sold"+"<br>";
+       })
+       document.write(cricketprice)
+       console.log(cricketprice)
+       document.getElementById("chinnoda").innerHTML=cricketprice
+
+    //    var cricketprice=cricket.every(function(player){
+    //        return player.length>=5
+    //    })
+    //    document.write(cricketprice)
+    //    console.log(cricketprice)
+
+    //    var cricketprice=cricket.some(function(player){
+    //        return player.length>=5
+    //    })
+    //    document.write(cricketprice)
+    //    console.log(cricketprice)
+       
+   </script> 
+</body>
+</html>

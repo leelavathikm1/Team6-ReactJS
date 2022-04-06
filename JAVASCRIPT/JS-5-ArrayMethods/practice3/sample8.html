@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const mobiles=["redmi","vivo","samsung","infinix","oppo"]
+
+        mobiles.forEach(function(call ,i){
+            document.write(i +call +"<br>");
+        })
+
+        const callprice=mobiles.map((call ,i)=>{
+            return i+"."+ call+"@phone"+"<br>";
+        })
+        document.write(callprice)
+
+        //  const checkcall1=mobiles.every(function(call){
+        //      return call.length>=5;
+        //  })
+        //  console.log(checkcall1)
+        //  document.write(checkcall1)
+        //  const checkcall=mobiles.some(function(call){
+        //      return call.length>=5;
+        //  })
+        //  console.log(checkcall1)
+        // document.write(checkcall1)
+
+
+    </script>
+</body>
+</html>

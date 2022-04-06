@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        var student = [
+        "Raju", 
+        "Dheena", 
+        "Rehman", 
+        "Naveen",
+        "saikiran"
+    ]
+    //foreach method
+    console.log(student)
+    student.forEach(function(name ,i){
+        document.write(i + " . " + name  +" <br> ")
+    })
+    //map
+    var nameprice =student.map((name)=>{
+        return name +"@kohli" + "<br>";
+    })
+    console.log(nameprice)
+     document.write(nameprice)
+     //every
+     let checkname = student.some(function(name){
+         return name.length>=10;
+     })
+     console.log(checkname)
+    
+
+    
+
+     
+
+    </script>
+</body>
+
+</html>
