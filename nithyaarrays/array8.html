@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var movies=["shivam","RRR","pandagachesco","legend"]
+        movies.forEach(function(move,i){
+            document.write(i +" . "+move+"<br>")
+        }) 
+        var moviehall=movies.map((move)=>{
+               return move+"@movies,com"+"<br>";
+        })
+        document.write(moviehall)
+        let checkmovie=movies.every(function(move){
+            return move.length >=3
+        })
+        console.log(checkmovie)
+        let checksmovie=movies.some((move)=>{
+            return move.length >=14;
+        })
+        console.log(checksmovie)
+    </script>
+</body>
+</html>
