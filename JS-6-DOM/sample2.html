@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <label for="fName">Entername</label>
+        <input type="text" name="fName" class="first" id="fname"><br/><br/>
+        <label for="lName">Lastname</label>
+        <input type="text" name="lName" class="second" id="lname"><br/><br/>
+        <label for="age">Age</label>
+        <input type="number" name="age" class="third" id="age"><br/><br/>
+        <label for="address" >Address</label>
+        <input type="text" name="address" class="four" id="address" ><br/><br/>
+        <label for="email" >Email</label>
+        <input type="text" name="email" class="five" id="email"><br/><br/>
+        <label for="phone" >Phone</label>
+        <input type="number" name="phone" class="six" id="phone"><br/><br/>
+        <label for="city" >city</label>
+        <input type="text" name="city" class="seven" id="city"><br/><br/>
+        <label for="pincode" >Pincode</label>
+        <input type="number" name="pincode" class="the" id="pincode"><br/><br/>
+
+        <button type="button" onclick="getdata()">submit</button>
+    </form>
+    <script>
+    //   getElementByclassName  
+       function getdata(){
+       var amma=document.getElementsByClassName("first")[0].value;
+       var appa=document.getElementsByClassName("second")[0].value;
+       var akka=document.getElementsByClassName("third")[0].value;
+       var anna=document.getElementsByClassName("four")[0].value;
+       var thampi=document.getElementsByClassName("five")[0].value;
+       var Papa=document.getElementsByClassName("six")[0].value;
+       var patti=document.getElementsByClassName("seven")[0].value;
+       var thatha=document.getElementsByClassName("the")[0].value;
+
+       document.write(amma,appa,akka,anna,thampi,Papa,patti,thatha)
+    
+            console.log(amma,appa,akka,anna,thampi,Papa,patti,thatha)
+        }
+       
+    
+
+    </script> 
+</body>
+</html>

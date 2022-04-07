@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FREE TRIAL</h1>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="myname" ><br><br>
+        <label for="email">Email</label>
+        <input type="text" name="email"><br><br>
+        <label for="con">Confirm email</label>
+        <input type="text" name="con"><br><br>
+        <label for="company">Company name</label>
+        <input type="text" name="company"><br><br>
+        <label for="terms and conditions">Terms and conditions</label>
+        <input type="text" name="terms"><br><br>
+        <button type="button" onclick="data()">submit</button>
+    </form>
+    <!-- getElementsByName -->
+    <script>
+        function data()
+       { var Name=document.getElementsByName("myname")[0].value+"<br>";
+        var Email=document.getElementsByName("email")[0].value+"<br>";
+        var Confirmemail=document.getElementsByName("con")[0].value+"<br>";
+        var Companyname=document.getElementsByName("company")[0].value+"<br>";
+        var Termsandconditions=document.getElementsByName("terms")[0].value+"<br>";
+        document.write(Name,Email,Confirmemail,Companyname,Termsandconditions)
+        console.log(Name,Email,Confirmemail,Companyname,Termsandconditions)}
+    </script>
+</body>
+</html>

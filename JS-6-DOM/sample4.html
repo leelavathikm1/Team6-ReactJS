@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hi">DONATION FORM</h1>
+    <H4 id="hello">THANKS FOR DONATING TO OUR CAUSE</H4>
+    <form id="jolly">
+        <label for="name">Name</label>
+        <input type="text" name="name"><br><br>
+        <label for="email">Email</label>
+        <input type="text" name="email"><br><br>
+        <label for="how">How much would you like to donate</label>
+        <input type="number" name="how"><br><br>
+        <label for="agree">I agree to make a donation, and proceed to pay</label>
+        <input type="number" name="agree"><br><br>
+        <button type="button" onclick="proceed()">Proceed</button>
+    </form>
+    <script>
+        function proceed(){
+            document.querySelector("h1").style.backgroundColor="red"
+            document.querySelector("h4").style.backgroundColor="green"
+            document.querySelector("form").style.backgroundColor="blue"
+            var name=document.getElementsByTagName("input")[0].value+"<br>"
+        var email=document.getElementsByTagName("input")[0].value+"<br>"
+        var how=document.getElementsByTagName("input")[0].value+"<br>"
+        var agree=document.getElementsByTagName("input")[0].value+"<br>"
+        document.write(name,email,how,agree,)
+        console.log(name,email,how,agree,)
+        
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">firstname</label>
+        <input type="text" id="fname"><br><br>
+        <label for="lname">lastname</label>
+        <input type="text" id="lname"><br><br>
+        <label for="age">Age</label>
+        <input type="text" id="age"><br><br>
+<button type="button" onclick="del()">submit</button>
+    </form>
+<script>
+    function del(){
+        var firstname=document.getElementById("fname").value;
+        var lastName=document.getElementById("lname").value;
+        var age=document.getElementById("age").value;
+        document.write(firstname+"<br>"+lastName+"<br>"+age)
+    }
+</script>
+
+</body>
+</html>
