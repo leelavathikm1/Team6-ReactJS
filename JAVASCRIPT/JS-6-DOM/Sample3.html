@@ -6,5 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <label for="fName">Enter Name </label>
+      <input type="text" id="fName" /><br /><br />
+
+      <label for="lName">Last Name</label>
+      <input type="text" id="lName" /><br /><br />
+
+      <label for="">Age</label>
+      <input type="number" id="myAge" />
+
+      <label for="mobile">Enter Mobile </label>
+      <input type="number" id="mobile" /><br /><br />
+
+      <label for="email">Enter E-MAil</label>
+      <input type="email" id="eMail" /><br /><br />
+
+      <button type="button" onclick="getData()">Submit</button>
+    </form>
+    <hr />
+    <ul id="myUl"></ul>
+    <script>
+      function getData() {
+        // var firstName = document.getElementById("fName").value;
+        // var lastName = document.getElementById("lName").value;
+        // var age = document.getElementById("myAge").value;
+        // var mobile = document.getElementById("mobile").value;
+        // var email = document.getElementById("eMail").value;
+
+        // var student = {
+        //   firstName: firstName,
+        //   lastName: lastName,
+        //   age: age,
+        //   mobile: mobile,
+        //   email: email,
+        // };
+
+        // var student1 = {
+        //   firstName,
+        //   lastName,
+        //   age,
+        //   mobile,
+        //   email,
+        // };
+
+        var student = {
+          fName: "",
+          lName: "",
+          myAge: "",
+          mobile: "",
+          eMail: "",
+        };
+
+        for (a in student) {
+          student[a] = document.getElementById(a).value;
+        }
+        console.log(student);
+
+        // console.log(student);
+      }
+    </script>
+  </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Mobile</th>
+          <th>city</th>
+          <th>State</th>
+          <th>Zip</th>
+        </tr>
+      </thead>
+      <tbody id="myTbody"></tbody>
+    </table>
+
+    <script src="./studentsData.js"></script>
+    <script>
+      //   fruits = ["orange", "banana", "Graps"];
+      //   for (i = 0; i < 10; i++) {
+      //     var myheading = document.createElement("h3");
+      //     document.body.appendChild(myheading);
+      //     myheading.innerText = "Hi Iam From JS ES6";
+      // document.write(i + "<br>");
+      //   }
+
+      //   for (i = 0; i < fruits.length; i++) {
+      //     console.log(fruits[i]);
+      //   }
+
+      //   var dispStudents=student
+      for (i = 0; i < studens.length; i++) {
+        var myTr = document.createElement("tr");
+        for (a in studens[0]) {
+          var myTd = document.createElement("td");
+          myTd.innerHTML = studens[i][a];
+          myTr.appendChild(myTd);
+        }
+        document.getElementById("myTbody").appendChild(myTr);
+      }
+    </script>
+  </body>
+</html>
