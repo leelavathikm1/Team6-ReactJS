@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">Enter Name : </label>
+        <input type="text" id="fname" class="fisName" name="entName" placeholder="Enter First Name">
+        <br> <br>
+        <label for="lname">Enter name : </label> 
+        <input type="text" id="lname" class="lasNme" name="exName" placeholder="Enter Last Name">
+        <br><br>
+        <label for="age">Age : </label>
+        <input type="number" id="age" class="myAge" name="entAge" placeholder="Enter Age">
+        <br><br>
+        <label for="email">Email Id : </label>
+        <input type="text" id="email" class="myEmail" name="entEmail" placeholder="Enter Email">
+        <br><br>
+        <label for="phoneNo">Phone No : </label>
+        <input type="text" id="phoneNo" class="myPhoneNo" name="entPhoneNo" placeholder="Enter Phone No">
+        <br><br>
+        <label for="city">City : </label>
+        <input type="text" id="city" class="myCIty" name="entCity" placeholder="Enter City">
+        <br><br>
+        <label for="pin">Pincode : </label>
+        <input type="text" id="pin" class="myPin" name="entPin" placeholder="Enter Pincode">
+        <br><br>
+        <label for="address">Address</label>
+        <input type="text" id="address" class="myAddress" name="entAddress" placeholder="Enter Address">
+        <br><br>
+        <button type="button" onclick="getData()">Submit</button>
+        
+    </form>
+    <script>
+        //getElementById
+        function getData() {
+            
+        var firstName = document.getElementById("fname").value;
+        var lastname = document.getElementById("lname").value;
+        var enterAge = document.getElementById("age").value;
+        var mailId = document.getElementById("email").value;
+        var phoneNumber = document.getElementById("phoneNo").value;
+        var yourCity = document.getElementById("city").value;
+        var pinCode = document.getElementById("pin").value;
+        var addresses = document.getElementById("address").value;
+
+        document.write(firstName, lastname, enterAge, mailId,phoneNumber, yourCity, pinCode, addresses);
+        console.log(firstName, lastname, enterAge, mailId,phoneNumber, yourCity, pinCode, addresses);
+        };
+
+        //getElementsByClassName
+        function getData(){
+            var firstName = document.getElementsByClassName("fisName")[0].value;
+        var lastname = document.getElementsByClassName("lasNme")[0].value;
+        var enterAge = document.getElementsByClassName("myAge")[0].value;
+        var mailId = document.getElementsByClassName("myEmail")[0].value;
+        var phoneNumber = document.getElementsByClassName("myPhoneNo")[0].value;
+        var yourCity = document.getElementsByClassName("myCIty")[0].value;
+        var pinCode = document.getElementsByClassName("myPin")[0].value;
+        var addresses = document.getElementsByClassName("myAddress")[0].value;
+
+        document.write(firstName, lastname, enterAge, mailId,phoneNumber, yourCity, pinCode, addresses);
+        console.log(firstName, lastname, enterAge, mailId,phoneNumber, yourCity, pinCode, addresses);
+        }; 
+        
+        //getElementsByName
+        function getData(){
+         var firstName = document.getElementsByName("entName")[0].value;
+        var lastname = document.getElementsByName("exName")[0].value;
+        var enterAge = document.getElementsByName("entAge")[0].value;
+        var mailId = document.getElementsByName("entEmail")[0].value;
+        var phoneNumber = document.getElementsByName("entPhoneNo")[0].value;
+        var yourCity = document.getElementsByName("entCity")[0].value;
+        var pinCode = document.getElementsByName("entPin")[0].value;
+        var addresses = document.getElementsByName("entAddress")[0].value;
+
+         document.write(firstName, lastname, enterAge, mailId,phoneNumber, yourCity, pinCode, addresses);
+         console.log(firstName, lastname, enterAge, mailId,phoneNumber, yourCity, pinCode, addresses);
+        };
+        
+    </script>
+    
+</body>
+</html>
