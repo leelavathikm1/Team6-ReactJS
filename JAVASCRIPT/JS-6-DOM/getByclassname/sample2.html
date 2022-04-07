@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="fname"> EnterName:</label>
+        <input type="text" name="myname" class="first" id="fname"><br><br>
+        <label for="lname">LastName:</label>
+        <input type="text" name="lastname" class="second" id="lname"><br><br>
+        <label for="myage">Myage:</label>
+        <input type="number" name="age" class="mage" id="myage"><br><br>
+        <label for="phone">MobileNo:</label>
+        <input type="text" name="myphone" class="mphone" id="phone"><br><br>
+        <label for="mail">EnterE-Mail</label>
+        <input type="email" name="mymail" class="mmail" id="mail"><br><br>
+        
+        <button type="button" onclick="student()">submit</button>
+    </form>
+        <script>
+            function student(){
+
+                var sai=document.getElementsByClassName("first")[0].value;
+                var raju=document.getElementsByClassName("second")[0].value;
+                var sujji=document.getElementsByClassName("mage")[0].value;
+                var jai=document.getElementsByClassName("mphone")[0].value;
+                var aruna=document.getElementsByClassName("mmail")[0].value;
+
+                document.write(sai+"<br>"+raju+"<br>"+sujji+"<br>"+jai+"<br>"+aruna)
+                console.log(sai+"<br>"+raju+"<br>"+sujji+"<br>"+jai+"<br>"+aruna)
+            }
+        </script>
+    
+</body>
+</html>

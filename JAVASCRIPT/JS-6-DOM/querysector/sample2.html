@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h4>
+            <label for="fname">FirstName:</label>
+        <input type="text" name="myname" id="fname"><br><br>
+        <label for="lname">LastName:</label>
+        <input type="text" name="lasname" id="lname"><br><br>
+        <label for="myage">EnterAge:</label>
+        <input type="number" name="ourage" id="myage"><br><br>
+        <label for="country">Country:</label>
+        <input type="text" name="mycountry" id="country"><br><br>
+        <label for="phone">MObileNumber:</label>
+        <input type="number" name="myphone" id="phone"><br><br>
+    
+    
+        <button type="button" onclick="saikiran()">Submit</button>
+        </h4>
+    </form>
+    <script>
+        function saikiran(){
+            var sai=document.querySelector("h4").innerText="sai"
+            var raju=document.querySelector("h4").innerText="jai"
+            var ram=document.querySelector("h4").innerText="raju"
+            var vijay=document.querySelector("h4").innerText="kiran"
+            var jai=document.querySelector("h4").innerText="jaya"
+
+            document.write(sai,raju,ram,vijay,jai)
+        }
+        
+    </script>
+</body>
+</html>

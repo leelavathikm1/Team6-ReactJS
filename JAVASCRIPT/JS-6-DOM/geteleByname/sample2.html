@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="fname">EnterName:</label>
+        <input type="text" name="FirstName" id="fname"><br><br>
+        <label for="lname">LastName:</label>
+        <input type="text" name="lastname" id="lname"><br><br>
+        <label for="class">Class:</label>
+        <input type="text" name="classes" id="class"><br><br>
+        <label for="college">Collegename:</label>
+        <input type="text" name="collegename" id="college"><br><br>
+        <label for="city">City</label>
+        <input type="text" name="cityname" id="city"><br><br>
+        <label for="dist">District</label>
+        <input type="text" name="district" id="dist"><br><br>
+
+        <button type="button" onclick="ramcharan()">submit</button>
+
+        <script>
+            function ramcharan(){
+                var sachin=document.getElementsByName("FirstName")[0].value;
+                var virat=document.getElementsByName("lastname")[0].value;
+                var dinesh=document.getElementsByName("classes")[0].value;
+                var siraj=document.getElementsByName("collegename")[0].value;
+                var maxi=document.getElementsByName("cityname")[0].value;
+                var faf=document.getElementsByName("district")[0].value;
+             
+                document.write(sachin+"<br>"+ virat+"<br>"+dinesh+"<br>"+siraj+"<br>"+maxi+"<br>"+faf)
+                console.log(sachin+"<br>"+ virat+"<br>"+dinesh+"<br>"+siraj+"<br>"+maxi+"<br>"+faf)
+            } 
+        </script>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">EnterName:</label>
+        <input type="text"  id="fname"><br><br>
+        <label for="fathername">FatherName:</label>
+        <input type="text"  id="fathername"><br><br>
+        <label for="mothername">Mothername:</label>
+        <input type="text" id="mothername"><br><br>
+        <label for="brothername">Brothername:</label>
+        <input type="text"  id="brothername"><br><br>
+        <label for="sistername">Sistername:</label>
+        <input type="text"  id="sistername"><br><br>
+        <label for="mycity">EnterCity:</label>
+        <input type="text"  id="mycity"><br><br>
+        <label for="mystate">EnterState:</label>
+        <input type="text"  id="mystate"><br><br>
+        <label for="number">MobieNumber</label>
+        <input type="number"  id="number"><br><br>
+        <label for="pin">EnterPin:</label>
+        <input type="number"  id="pin"><br><br>
+
+        <button type="button" onclick="chinnoda()">LOGIN</button>
+
+        <script>
+           function chinnoda(){
+            var firstname=document.getElementById("fname").value;
+            var fathername=document.getElementById("fathername").value;
+            var mothername=document.getElementById("mothername").value;
+            var brothername=document.getElementById("brothername").value;
+            var sistername=document.getElementById("sistername").value;
+            var mycity=document.getElementById("mycity").value;
+            var mystate=document.getElementById("mystate").value;
+            var number=document.getElementById("number").value;
+            var pin=document.getElementById("pin").value;
+
+            document.write(firstname+"<br>"+fathername+"<br>"+mothername+"<br>"+brothername+"<br>"+sistername+"<br>"+mycity+"<br>"+mystate+"<br>"+number+"<br>"+pin)
+            console.log(firstname+"<br>"+fathername+"<br>"+mothername+"<br>"+brothername+"<br>"+sistername+"<br>"+mycity+"<br>"+mystate+"<br>"+number+"<br>"+pin)
+
+           }
+
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">Entername:</label>
+        <input type="text"  id="fname"><br><br>
+        <label for="lname"> LastName:</label>
+        <input type="text"  id="lname"><br><br>
+        <label for="myage">EnterAge:</label>
+        <input type="number"  id="myage"><br><br>
+        <label for="mycity"> City:</label>
+        <input type="text" id="mycity"><br><br>
+        <label for="mystate">State:</label>
+        <input type="text"  id="mystate"><br><br>
+        <label for="pinnumber">EnterPin:</label>
+        <input type="number"  id="pinnumber"><br><br>
+
+        <button type="button" onclick="Details()">Submit</button>
+        
+    </form>
+    <script>
+        function Details(){
+            
+            var fname=document.getElementsByTagName("input")[0].value+"<br>";
+            var lname=document.getElementsByTagName("input")[1].value +"<br>";
+            var myage=document.getElementsByTagName("input")[2].value +"<br>";
+            var mycity=document.getElementsByTagName("input")[3].value +"<br>";
+            var mystate=document.getElementsByTagName("input")[4].value +"<br>";
+            var pinnumber=document.getElementsByTagName("input")[5].value +"<br>";
+
+            document.write(fname,lname,myage,mycity,mystate,pinnumber)
+            console.log(fname,lname,myage,mycity,mystate,pinnumber)
+        }
+    </script>
+</body>
+</html>

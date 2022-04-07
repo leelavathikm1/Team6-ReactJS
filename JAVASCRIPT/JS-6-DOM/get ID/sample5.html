@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="sname">StudentName:</label>
+        <input type="text"  id="sname"><br><br>
+        <label for="college">College</label>
+        <input type="text"  id="college"><br><br>
+        <label for="rollnum">RollNumber:</label>
+        <input type="number"  id="rollnum"><br><br>
+        <label for="mail">EnterMail:</label>
+        <input type="email"  id="mail"><br><br>
+        <label for="phone">Phonenumber:</label>
+        <input type="number"  id="phone"><br><br>
+        <label for="myage">EnterAge:</label>
+        <input type="text" id="myage"><br><br>
+        
+        <button type="button" onclick="colleges()">Submit</button>
+
+        <script>
+          function colleges(){
+            var StudentName=document.getElementById("sname").value;
+            var college=document.getElementById("college").value;
+            var rollnum=document.getElementById("rollnum").value;
+            var mail=document.getElementById("mail").value;
+            var phone=document.getElementById("phone").value;
+            var myage=document.getElementById("myage").value;
+
+
+            document.write(StudentName+"<br>"+college+"<br>"+rollnum+"<br>"+mail+"<br>"+phone+"<br>"+myage)
+            console.log(StudentName+"<br>"+college+"<br>"+rollnum+"<br>"+mail+"<br>"+phone+"<br>"+myage)
+          }
+
+         
+            
+        </script>
+
+    </form>
+</body>
+</html>

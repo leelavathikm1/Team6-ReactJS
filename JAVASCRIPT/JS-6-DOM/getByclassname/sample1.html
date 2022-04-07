@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>
+            <label for="fname">FirstName:</label>
+        <input type="text" name="myname" class="name" id="fname"><br><br>
+        <label for="lname">LastName:</label>
+        <input type="text" name="lasname" class="sername" id="lname"><br><br>
+        <label for="myage">EnterAge:</label>
+        <input type="number" name="ourage" class="herage" id="myage"><br><br>
+    
+    
+        <button type="button" onclick="saikiran()">Submit</button>
+        </h1>
+    </form>
+
+    <script>
+        function saikiran(){
+            var start =document.getElementsByClassName("name")[0].value;
+            var middle =document.getElementsByClassName("sername")[0].value;
+            var end =document.getElementsByClassName("herage")[0].value;
+
+            document.write(start,middle,end)
+                console.log(start,middle,end)
+        }
+    </script>
+</body>
+</html>

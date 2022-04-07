@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="fname">EnterName:</label>
+        <input type="text" name="Name" class="first" id="fname"><br><br>
+        <label for="fathername">fathername:</label>
+        <input type="text" name="fjname" class="second" id="fathername"><br><br>
+        <label for="mothername">MotherName:</label>
+        <input type="text" name="msname" class="third" id="mothername"><br><br>
+        <label for="roll">EnterrollNo:</label>
+        <input type="number" name="rollno" class="four" id="roll"><br><br>
+        <label for="addnum">AddmissionNO:</label>
+        <input type="number" name="AddmissionNO" class="five" id="addnum"><br><br>
+
+        <button type="button" onclick="details()">Submit</button>
+    </form>
+
+    <script>
+        function details(){
+            var saikiran=document.getElementsByClassName("first")[0].value;
+            var raju=document.getElementsByClassName("second")[0].value;
+            var aruna=document.getElementsByClassName("third")[0].value;
+            var sireesha=document.getElementsByClassName("four")[0].value;
+            var lithisha=document.getElementsByClassName("five")[0].value;
+
+            document.write(saikiran+"<br>"+raju+"<br>"+aruna+"<br>"+sireesha+"<br>"+lithisha)
+            console.log(saikiran+"<br>"+raju+"<br>"+aruna+"<br>"+sireesha+"<br>"+lithisha)
+        }
+    </script>
+</body>
+</html>
