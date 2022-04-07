@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">enter name</label>
+        <input type="text" name="names"><br> <br>
+        <label for="lname">last name</label>
+        <input type="text" name="names"><br><br>
+        <label for="age">age</label>
+        <input type="number" name="names"><br><br>
+        <label for="email">enter Email</label>
+        <input type="email" name="names"><br><br>
+        <label for="number">mobile number</label>
+        <input type="text" name="names"><br><br>
+        <label for="city">city</label>
+        <input type="text" name="names"><br><br>
+        <button type="button" onclick="getDetais()">submit</button>
+        <script> 
+        //getElementsByName
+        function getDetais(){
+            var one=document.getElementsByName("names")[0].value ;
+            var two=document.getElementsByName("names")[1].value +"<br>";
+            var three=document.getElementsByName("names")[2].value +"<br>";
+            var four=document.getElementsByName("names")[3].value +"<br>";
+            var five=document.getElementsByName("names")[4].value +"<br>";
+            var six=document.getElementsByName("names")[5].value +"<br>";
+
+            console.log(one,two,three,four,five,six);
+            document.write(one,two,three,four,five,six)
+        }
+        </script>
+    </form>
+</body>
+</html>

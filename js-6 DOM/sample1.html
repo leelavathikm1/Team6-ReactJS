@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">enter name</label>
+        <input type="text" id="fname"><br> <br>
+        <label for="lname">last name</label>
+        <input type="text" id="lname"><br><br>
+        <label for="age">age</label>
+        <input type="number" id="iname"><br><br>
+         <label for="email">enter Email</label> 
+        <input type="email" id="mail"><br><br>
+        <label for="number">mobile number</label>
+        <input type="text" id="number"><br><br>
+        <label for="city">city</label>
+        <input type="text" id="city">
+        <button type="button" onclick="getData()"> Submit </button>
+    </form>
+    <script>
+        //document.getElementById
+       function getData() {
+            var firstName= document.getElementById("fname").value;
+            var lastName=document.getElementById("lname").value+"<br>";
+            var age=document.getElementById("iname").value+"<br>";
+            var email=document.getElementById("mail").value+"<br>";
+            var number=document.getElementById("number").value+"<br>";
+            var city=document.getElementById("city").value;
+
+            document.write(firstName,lastName,age,email,number,city);
+            console.log(firstName,lastName,age,email,number,city);
+        }
+    </script>
+</body>
+</html>

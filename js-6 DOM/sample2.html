@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="fname">enter name</label>
+    <input type="text" id="fname"><br> <br>
+    <label for="lname">last name</label>
+    <input type="text" id="lname"><br><br>
+    <label for="age">age</label>
+    <input type="number" class="age"><br><br>
+    <label for="email">enter Email</label>
+    <input type="email" name="names"><br><br>
+    <label for="number">mobile number</label>
+    <input type="text"><br><br>
+    <label for="city">city</label>
+    <input type="text" name= "names"><br><br>
+    <button type="button" onclick="getvalue()">submit</button>
+</form>
+<script>
+    function getvalue() {
+        //getElementbyId
+        var firstName=document.getElementById("fname").value;
+        var lastName=document.getElementById("lname").value+"<br>";
+
+        //getElementByclassName
+        var age=document.getElementsByClassName("age")[0].value+ "<br>";
+
+        //getElementsByName
+        var email=document.getElementsByName("names")[0].value+"<br>";
+        var place=document.getElementsByName("names")[1].value;
+
+        //getElementsByTagName
+        var number=document.getElementsByTagName("input")[4].value+"<br>";
+
+       document.write(firstName,lastName,age,email,number,place)
+      console.log(firstName,lastName,age,email,number,place)
+    }
+</script>
+</body>
+</html>
