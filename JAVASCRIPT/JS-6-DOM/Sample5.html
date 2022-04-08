@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="radio" name="gender" value="Male" />Male <br />
+    <input type="radio" name="gender" value="Female" />Female <br /><br />
+
+    <input type="checkbox" name="cars" value="Fortunar" />Fortunar <br />
+    <input type="checkbox" name="cars" value="Scorpio" />Scorpio <br />
+    <input type="checkbox" name="cars" value="Audi" />Audi <br />
+    <input type="checkbox" name="cars" value="Ferrari" />Ferrari <br />
+    <input type="checkbox" name="cars" value="Swift" />Swift <br />
+
+    <button type="button" onclick="getDetails()">Get Details</button>
+
+    <script>
+      function getDetails() {
+        var person = {
+          gender: "",
+          cars: [],
+        };
+
+        var allRadioBtns = document.getElementsByName("gender");
+        allRadioBtns.forEach((selectedVal) => {
+          if (selectedVal.checked == true) {
+            person.gender = selectedVal.value;
+          }
+          console.log(person.gender);
+        });
+
+        var allcheckboxes = document.getElementsByName("cars");
+
+        allcheckboxes.forEach((capturedval) => {
+          if (capturedval.checked == true) {
+            person.cars.push(capturedval.value);
+          }
+        });
+        console.log(person.cars);
+      }
+    </script>
+  </body>
+</html>

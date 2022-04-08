@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var myImgAddress = [
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+        "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2",
+      ];
+
+      for (i = 0; i < myImgAddress.length; i++) {
+        var myImgUrl =
+          "https://www.bing.com/th?id=OIP.OsaUGtD5qTe3n_f3YRfFGwHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2";
+        var myImage = document.createElement("img");
+        if (i >= 5) {
+          myImage.setAttribute("src", myImgAddress[0]);
+        } else {
+          myImage.setAttribute("src", myImgAddress[i]);
+        }
+        myImage.style.width = "250px";
+        myImage.style.height = "150px";
+        document.body.appendChild(myImage);
+      }
+    </script>
+  </body>
+</html>
