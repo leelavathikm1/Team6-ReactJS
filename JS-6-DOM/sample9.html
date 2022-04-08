@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="myname" ><br><br>
+        <label for="email">Email</label>
+        <input type="text" id="email"><br><br>
+        <label for="con">Confirm email</label>
+        <input type="text" id="con"><br><br>
+        <label for="company">Company name</label>
+        <input type="text" id="company"><br><br>
+        <label for="terms and conditions">Terms and conditions</label>
+        <input type="text" id="terms"><br><br>
+        <button type="button" onclick="data()">submit</button>
+    </form>
+    <script>
+        function data(){
+            var Name=document.getElementById("myname").value;
+            var Email=document.getElementById("email").value;
+            var Confirmemail=document.getElementById("con").value;
+            var Companyname=document.getElementById("company").value;
+            var Termsandconditions=document.getElementById("terms").value;
+
+            var student={
+                Name:Name,
+                Email:Email,
+                Confirmemail:Confirmemail,
+                Companyname:Companyname,
+                Termsandconditions:Termsandconditions,
+            }
+            var student={
+                Name,
+                Email,
+                Confirmemail,
+                Companyname,
+                Termsandconditions,
+            }
+            var student={
+                myname:"",
+                email:"",
+                con:"",
+                company:"",
+                terms:"",
+            }
+            for(a in student){
+                student[a]=document.getElementById(a).value;
+            }
+            console.log(student)
+        }
+       
+    </script>
+</body>
+</html>

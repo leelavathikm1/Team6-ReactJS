@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">Firstname</label>
+        <input type="text" id="fname"><br><br>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname"><br><br>
+        <label for="age">Age</label>
+        <input type="number" id="age"><br><br>
+        <label for="mobile">Mobile</label>
+        <input type="number" id="mobile"><br><br>
+        <label for="email">E-mail</label>
+        <input type="text" id="email"><br><br>
+        <button type="button" onclick="data()">submit</button>
+
+    </form>
+    <hr>
+    <ul id="myul"></ul>
+    <script>
+        function data(){
+            var Firstname=document.getElementById("fname").value;
+            var Lastname=document.getElementById("lname").value;
+            var Age=document.getElementById("age").value;
+            var Mobile=document.getElementById("mobile").value;
+            var Email=document.getElementById("email").value;
+            
+            var students={
+            Firstname: Firstname,
+            Lastname:Lastname,
+            Age:Age,
+            Mobile:Mobile,
+            Email:Email,
+        };
+
+        console.log(students)
+        var students1={
+            Firstname,
+            Lastname,
+            Age,
+            Mobile,
+            Email,
+        }
+console.log(students1)
+  
+var student={
+    fname:"",
+    lname:"",
+    age:"",
+    mobile:"",
+    email:"",
+}  ;     
+      
+for (a in student){
+student[a]=document.getElementById(a).value;
+}
+ console.log(student);      
+}
+    </script>
+</body>
+</html>
