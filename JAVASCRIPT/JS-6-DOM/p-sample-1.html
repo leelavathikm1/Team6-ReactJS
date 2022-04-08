@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First Name : </label>
+        <input type="text" id="fname"><br><br>
+
+        <label for="lname">Last Name : </label>
+        <input type="text" id="lname"><br><br>
+
+        <label for="myAge">Age : </label>
+        <input type="number" id="myAge"><br><br>        
+
+        <label for="telNo">Phone No : </label>
+        <input type="text" id="telNo"><br><br>
+
+        <label for="myEmail">Email Id : </label>
+        <input type="email" name="" id="myEmail"><br><br>
+
+        <label for="myState">State : </label>
+        <input type="text" id="myState"><br><br>
+
+        <label for="myCity">City : </label>
+        <input type="text" name="" id="myCity"><br><br>
+        
+        <button type="button" onclick="getdata()"> Submit</button>
+    </form>
+    <hr>
+    <script>
+        function getdata(){            
+        var firstName = document.getElementById("fname").value
+        var lastName = document.getAnimations("lname").value;
+        var age = document.getElementById("myAge").value;
+        var phoneNo = document.getElementById("telNo").value;
+        var email = document.getElementById("myEmail").value;
+        var state = document.getElementById("myState").value;
+        var city = document.getElementById("myCity").value;         
+
+        var student2 = {
+            firstName : firstName,
+            lastName : lastName,
+            age : age,
+            phoneNo : phoneNo,
+            email : email,
+            state : state,
+            city : city,
+        };
+        console.log(student2);
+         var student1 ={
+            firstName,
+            lastName,
+            age,
+            phoneNo,
+            email,
+            state,
+            city,
+         };
+         console.log(student1)
+         var student = {
+             fname : "",
+             lname : "",
+             myAge : "",
+             telNo : "",
+             myEmail : "",
+             myState: "",
+             myCity : "",
+         };
+         for (a in student){
+             student[a] = document.getElementById(a).value;
+         }
+         console.log(student);
+        };
+    </script>
+    
+</body>
+</html>

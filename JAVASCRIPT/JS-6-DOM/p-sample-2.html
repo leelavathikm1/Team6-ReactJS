@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" name="" id="fname"><br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname"><br><br>
+
+        <label for="myAge">age</label>
+        <input type="number" name="" id="myAge"><br><br>
+
+        <label for="phone">Phone No</label>
+        <input type="text" name="" id="phone"><br><br>
+
+        <label for="email">Email Id</label>
+        <input type="email" name="" id="eMail"><br><br>
+
+        <button type="button" onclick="getdata()">Submit</button>
+    </form>
+    <script>
+        function getdata(){
+            var firstName = document.getElementById("fname").value;
+            var lastName = document.getElementById("lname").value;
+            var age = document.getElementById("myAge").value;
+            var phoneNo = document.getElementById("phone").value;
+            var email = document.getElementById("eMail").value;
+            
+            var person1 = {
+                firstName : firstName,
+                lastName : lastName,
+                age : age,
+                phoneNo : phoneNo,
+                email : email,
+            }
+            console.log(person1);
+            var person2 = {
+                firstName,
+                lastName,
+                age,
+                phoneNo,
+                email,
+            }
+            console.log(person2);
+
+            var person = {
+                fname : " ",
+                lname : "",
+                myAge : " ",
+                phone : " ",
+                eMail : " ",
+            }
+            for (a in person){
+                person[a] = document.getElementById(a).value;
+            }
+            console.log(person);
+        }
+    </script>
+</body>
+</html>
