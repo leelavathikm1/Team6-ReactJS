@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="drink" value="tea">tea<br>
+    <input type="radio" name="drink" value="coffee">coffee<br>
+    <input type="checkbox" name="food" value="idli sambar">idli sambar<br>
+    <input type="checkbox" name="food" value="puttu">puttu<br>
+    <input type="checkbox" name="food" value="idiyappam">idiyappam<br>
+    <input type="checkbox" name="food" value="appam">appam<br>
+    <input type="checkbox" name="food" value="pongal">pongal<br>
+    <input type="checkbox" name="food" value="kichady">kichady<br>
+    <button type="button" onclick="getdata()">getdata</button>
+    <script>
+       function getdata(){
+        var breakfat={
+            drink:"",
+            food:[],
+        };
+        var all=document.getElementsByName("drink");
+        all.forEach((eat)=>{
+            if(eat.checked==true){
+               breakfat.drink=eat.value ;
+            }
+            console.log(breakfat.drink)
+        })
+        var all=document.getElementsByName("food")
+        all.forEach((eat)=>{
+            if (eat.checked==true){
+                breakfat.food=eat.value;
+            }
+            console.log(breakfat.food)
+        })
+       }
+    </script>
+</body>
+</html>

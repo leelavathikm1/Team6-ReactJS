@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="val" value="b.sc">b.sc<br>
+    <input type="radio" name="val" value="m.sc">m.sc<br>
+    <input type="checkbox" name="course" value="cor">clinical nutrition<br>
+    <input type="checkbox" name="course" value="cor">food and science nutrition<br>
+    <input type="checkbox" name="course" value="cor">appliied nutrition<br>
+    <input type="checkbox" name="course" value="cor">dietetics<br>
+    <input type="checkbox" name="course" value="cor">home science<br>
+    <input type="checkbox" name="course" value="cor">clinical nutrition<br>
+    <input type="checkbox" name="course" value="cor">advanced nutrition<br>
+    <button type="button" onclick="getdetails()">getdetails</button>
+    <script>
+        function getdetails(){
+            var study={
+                val:"",
+                course:[],
+            };
+        var the=document.getElementsByName("val") 
+        the.forEach((knowledge)=>{
+            if(knowledge.checked==true){
+                study.val=knowledge.value
+            }
+            console.log(study.val)
+        }) 
+        var the=document.getElementsByName("course");
+        the.forEach((knowledge)=>{
+            if(knowledge.checked==true){
+                study.course=knowledge.value
+            }
+            console.log(study.course)
+        })
+          }
+        
+    </script>
+</body>
+</html>

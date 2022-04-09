@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="flower" value="rose">rose<br>
+    <input type="radio" name="flower" value="lotus">lotus<br>
+    <input type="checkbox" name="day" value="sunday">sunday<br>
+    <input type="checkbox" name="day" value="monday">monday<br>
+    <input type="checkbox" name="day" value="tuesday">tuesday<br>
+    <input type="checkbox" name="day" value="wednesday">wednesday<br>
+    <input type="checkbox" name="day" value="thursday">thursday<br>
+    <input type="checkbox" name="day" value="friday">friday<br>
+    <input type="checkbox" name="day" value="saturday">saturday<br>
+    <button type="button" onclick="getdetails()">getdetails</button>
+    <script>
+        function getdetails(){
+            var flow={
+                flower:"",
+                day:[],
+            };
+            var allradiobtns=document.getElementsByName("flower");
+            allradiobtns.forEach((leaves)=>{ if(leaves.checked==true){
+                flow.flower=leaves.value;
+            }
+        console.log(flow.flower)})
+
+        var allradiobtns=document.getElementsByName("day");
+        allradiobtns.forEach((leaves)=>{
+           if (leaves.checked==true){
+               flow.day.push(leaves.value)
+           }})
+           console.log(flow.day)
+        
+        }
+        
+    </script>
+</body>
+</html>
