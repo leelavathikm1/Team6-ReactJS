@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="fname">Entername:</label>
+        <input type="text"  id="firstname"><br><br>
+        <label for="lname"> LastName:</label>
+        <input type="text"  id="lastname"><br><br>
+        <label for="myage">EnterAge:</label>
+        <input type="number"  id="saiage"><br><br>
+        <label for="mycity"> City:</label>
+        <input type="text" id="saicity"><br><br>
+        <label for="mystate">State:</label>
+        <input type="text"  id="saistate"><br><br>
+        <label for="pinnumber">EnterPin:</label>
+        <input type="number"  id="zipnumber"><br><br>
+
+        <button type="button" onclick="Details()">Submit</button>
+        
+    </form>
+    <ul id="myul"></ul>
+    <script>
+       function Details(){
+        var student={
+            firstname:"",
+            lastname:"",
+            saiage:"",
+            saicity:"",
+            saistate:"",
+            zipnumber:"",
+
+        }
+        for (a in Details){
+            Details[a]=document.getElementById(a).value;
+        }
+        console.log(Details)
+       }
+    </script>
+</body>
+</html>

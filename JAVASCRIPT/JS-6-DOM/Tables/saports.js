@@ -1,0 +1,46 @@
+var concept=[
+    {
+        Day:"monday",
+        Sports:"cricket",
+        StartTime:"11:00",
+        EndTime:"18:00",
+    },
+    {
+        Day:"Tuesday",
+        Sports:"Football",
+        StartTime:"20:00",
+        EndTime:"23:00",
+    },
+    {
+        Day:"Wednesday",
+        Sports:"Kabbadi",
+        StartTime:"09:00",
+        EndTime:"18:00",
+    },
+    {
+        Day:"Thurday",
+        Sports:"Hockey",
+        StartTime:"16:00",
+        EndTime:"18:00",
+    },
+    {
+        Day:"Friday",
+        Sports:"vollyball",
+        StartTime:"09:00",
+        EndTime:"18:00",
+    },
+    {
+        Day:"Saturday",
+        Sports:"Tennis",
+        StartTime:"09:00",
+        EndTime:"18:00",
+    },
+    {
+        Day:"Sunday",
+        Sports:"Golf",
+        StartTime:"15:00",
+        EndTime:"22:00",
+    },          
+
+
+]

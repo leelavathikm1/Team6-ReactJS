@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>EmployeeId</th>
+                <th>SalesPerson</th>
+                <th>SalesOffice</th>
+                <th>OfficeNumber</th>
+                <th>Customer1</th>
+                <th>customer2</th>
+            </tr>
+        </thead>
+        <tbody id="sales"></tbody>
+    </table>
+<script src="./Business.js"></script>
+    <script>
+      for (i=0; i<salesstaf.length;i++){
+          var myTr=document.createElement("tr");
+
+          for(a in salesstaf [0]){
+              var myTd=document.createElement("td");
+              myTd.innerHTML=salesstaf[i][a];
+              myTr.appendChild(myTd)
+          }
+          document.getElementById("sales").appendChild(myTr)
+
+      }
+     
+    </script>
+</body>
+</html>

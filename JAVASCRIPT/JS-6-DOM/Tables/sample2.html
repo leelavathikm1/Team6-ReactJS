@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead >
+            <tr>
+                <!-- <th style="width: 100px;height: 100px;"><img src="https://images.indianexpress.com/2022/03/vijay-beast-1200.jpg" alt=""></th> -->
+                <th>sports</th>
+                <th>Pname</th>
+                <th>DOB</th>
+                <th>Age</th>
+                <th>country</th>
+
+            </tr>
+            
+        </thead>
+        <tbody id="saikiran"></tbody>
+
+    </table>
+    <script src="./user.js"></script>
+    <script>
+       for(i=0; i<player.length;i++){
+           var myTr=document.createElement("tr");
+
+           for (a in player[0]){
+              var myTd=document.createElement("td");
+              myTd.innerHTML=player[i][a];
+              myTr.appendChild(myTd);
+           }
+           document.getElementById("saikiran").appendChild(myTr);
+       }
+      
+    </script>
+</body>
+</html>

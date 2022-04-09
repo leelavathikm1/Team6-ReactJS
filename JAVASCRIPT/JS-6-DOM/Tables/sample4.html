@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Sports</th>
+                <th>StartTime</th>
+                <th>EndTime</th>
+            </tr>              
+        </thead>
+        <tbody id="Friends"></tbody>
+        <script src="./saports.js"></script>
+    </table>
+    <script>
+     for(i=0;i<concept.length;i++){
+         var myTr=document.createElement("tr");
+         for(a in concept[0]){
+             var myTd=document.createElement("td");
+             myTd.innerHTML=concept[i][a];
+             myTr.appendChild(myTd);
+         }
+
+         document.getElementById("Friends").appendChild(myTr)
+     }
+    </script>
+</body>
+</html>

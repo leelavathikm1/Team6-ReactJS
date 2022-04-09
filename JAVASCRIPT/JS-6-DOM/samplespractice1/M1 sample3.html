@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="fname">Entername:</label>
+        <input type="text"  id="fname"><br><br>
+        <label for="lname"> LastName:</label>
+        <input type="text"  id="lname"><br><br>
+        <label for="myage">EnterAge:</label>
+        <input type="number"  id="myage"><br><br>
+        <label for="mycity"> City:</label>
+        <input type="text" id="mycity"><br><br>
+        <label for="mystate">State:</label>
+        <input type="text"  id="mystate"><br><br>
+        <label for="pinnumber">EnterPin:</label>
+        <input type="number"  id="pinnumber"><br><br>
+
+        <button type="button" onclick="Details()">Submit</button>
+        
+    </form>
+
+    <script>
+        function Details(){
+            var firstname=document.getElementById("fname").value;
+            var LastName=document.getElementById("lname").value;
+            var  myage=document.getElementById("myage").value;
+            var  mycity=document.getElementById("mycity").value;
+            var mystate=document.getElementById("mystate").value;
+            var pinnumber=document.getElementById("pinnumber").value
+
+            var person={
+                firstname:firstname,
+                LastName:LastName,
+                myage:myage,
+                mycity:mycity,
+                mystate:mystate,
+                pinnumber:pinnumber,          
+
+            }
+            console.log(person)
+
+       }
+    </script>
+</body>
+</html>

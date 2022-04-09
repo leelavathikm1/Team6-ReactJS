@@ -1,0 +1,50 @@
+var salesstaf=[
+    {
+    EmployeeId:1004,
+    SalesPerson:"vikaram",
+    SalesOffice:"Austrilia",
+    OfficeNumber:2001,
+    Customer1:"GM",
+    Customer2:"HP"
+},
+{
+    EmployeeId:1005,
+    SalesPerson:"Ranjith",
+    SalesOffice:"Engaland",
+    OfficeNumber:2001,
+    Customer1:"GM",
+    Customer2:"HP"
+},
+{
+    EmployeeId:1006,
+    SalesPerson:"Robert",
+    SalesOffice:"America",
+    OfficeNumber:2001,
+    Customer1:"GM",
+    Customer2:"HP"
+},
+{
+    EmployeeId:1007,
+    SalesPerson:"Ishan",
+    SalesOffice:"Russia",
+    OfficeNumber:2001,
+    Customer1:"GM",
+    Customer2:"HP"
+},
+{
+    EmployeeId:1008,
+    SalesPerson:"virat",
+    SalesOffice:"India",
+    OfficeNumber:2001,
+    Customer1:"GM",
+    Customer2:"HP"
+},
+{
+    EmployeeId:1009,
+    SalesPerson:"vinod",
+    SalesOffice:"Dubai",
+    OfficeNumber:2001,
+    Customer1:"GM",
+    Customer2:"HP"
+},
+]

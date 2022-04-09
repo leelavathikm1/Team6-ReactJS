@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="sname">StudentName:</label>
+        <input type="text"  id="sname"><br><br>
+        <label for="college">College</label>
+        <input type="text"  id="college"><br><br>
+        <label for="rollnum">RollNumber:</label>
+        <input type="number"  id="rollnum"><br><br>
+        <label for="mail">EnterMail:</label>
+        <input type="email"  id="mail"><br><br>
+        <label for="phone">Phonenumber:</label>
+        <input type="number"  id="phone"><br><br>
+        <label for="myage">EnterAge:</label>
+        <input type="text" id="myage"><br><br>
+        
+        <button type="button" onclick="colleges()">Submit</button>
+    </form>
+    <ul id="myid"></ul>
+    <script>
+        function colleges(){
+            sname=document.getElementById("sname").value,
+            college=document.getElementById("college").value,
+            rollnum=document.getElementById("rollnum").value,
+            mail =document.getElementById("mail").value,
+            phone=document.getElementById("phone").value,
+            myage=document.getElementById("myage").value
+
+            // var student={
+            //     sname:sname,
+            //     college:college,
+            //     rollnum:rollnum,
+            //     mail:mail,
+            //     phone:phone,
+            //     myage:myage,
+            // }
+            // console.log(student)
+
+            // var student2={
+            //     sname,
+            //     college,
+            //     rollnum,
+            //     mail,
+            //     phone,
+            //     myage,
+            // }
+            // console.log(student2)
+
+            var student={
+                sname:"",
+                college:"",
+                rollnum:"",
+                mail:"",
+                phone:"",
+                myage:"",
+            };
+            for (a in student){
+                student [a]=document.getElementById(a).value;
+            }
+            document.write("student")
+            console.log(student)
+            
+        }
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>
