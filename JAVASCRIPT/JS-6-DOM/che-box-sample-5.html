@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="radio" name="gender" value="male">Male <br>
+    <input type="radio" name="gender" value="female">female <br><br>
+    <hr>
+
+    <input type="checkbox" name="biryanis" value="chiken">Chiken <br>
+    <input type="checkbox" name="biryanis" value="mutton">Mutton <br>
+    <input type="checkbox" name="biryanis" value="prawns">Prawns <br>
+    <input type="checkbox" name="biryanis" value="fish">Fish <br>
+
+    <button type="button" onclick="getDetails()"> Submit</button>
+    <script>
+        function getDetails(){
+            person = {
+                gender : "",
+                biryanis : [],
+            };
+            var allradiobut = document.getElementsByName("gender");
+            allradiobut.forEach((selectedval) => {
+                if (selectedval.checked == true) {
+                    person.gender = selectedval.value;
+                };
+            });
+            console.log(person.gender);
+            var allchechboxs = document.getElementsByName("biryanis");
+            allchechboxs.forEach((caputredval) => {
+                if (caputredval.checked == true) {
+                    person.biryanis.push(caputredval.value);
+                };
+            });
+            console.log(person.biryanis);
+        }
+    </script>
+</body>
+</html>

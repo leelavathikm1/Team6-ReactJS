@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgAddress = [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvlCZR8ZZKU6UshIQiibUF0S4z219wEg9Sg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKHq9zY36XqwOUZ4DQEghl52yyac7u0kvIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6V84McW80hOEkJbltls0nIC8AmvbzrY5YA&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAfvGm0ElXCTmZL_OxUSAOyns2siQUEGplJw&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvlCZR8ZZKU6UshIQiibUF0S4z219wEg9Sg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKHq9zY36XqwOUZ4DQEghl52yyac7u0kvIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6V84McW80hOEkJbltls0nIC8AmvbzrY5YA&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAfvGm0ElXCTmZL_OxUSAOyns2siQUEGplJw&usqp=CAU",
+        ];
+        for (i=0; i < myImgAddress.length; i++) {
+            var myImgUrl = 
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAfvGm0ElXCTmZL_OxUSAOyns2siQUEGplJw&usqp=CAU";
+            var myImges = document.createElement("img");
+            if(i >= 8) {
+                myImges.setAttribute("src", myImgAddress[0]);
+            }
+            else {
+                myImges.setAttribute("src", myImgAddress[i]);
+            }
+            myImges.style.width = "300px";
+            myImges.style.height = "150px";
+            myImges.style.margin = "10px";
+            document.body.appendChild(myImges);
+        }
+
+    </script>
+    
+</body>
+</html>

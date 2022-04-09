@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgAddress = [
+            "https://swall.teahub.io/photos/small/249-2492578_nature-status-and-quotes-for-whatsapp-most-beautiful.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXhjgkBOpNvYKhWs2XFgF37N-Qca2oJedX4w&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg3XgIhJY0K8oRD3c-iHapjanf9A50JE2zvg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_YAGB7pSXVKAXThPlNwoq1d9gMP2rjEG2Q&usqp=CAU",
+        ];
+        for (i=0; i < myImgAddress.length; i++) {
+            var myImgUrl = 
+            "https://swall.teahub.io/photos/small/249-2492578_nature-status-and-quotes-for-whatsapp-most-beautiful.jpg";
+            var myimage = document.createElement("img");
+            if (i >= 4) {
+                myimage.setAttribute("src", myImgAddress[0]);
+            } 
+            else {
+                myimage.setAttribute("src", myImgAddress[i]);
+            }
+            myimage.style.width = "300px";
+            myimage.style.height = "150px";
+            myimage.style.margin = " 10px";
+            document.body.appendChild(myimage);
+        }
+    </script>
+</body>
+</html>

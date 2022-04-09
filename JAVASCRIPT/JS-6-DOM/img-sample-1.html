@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgAddress = [
+            "https://images.unsplash.com/photo-1586082207282-3dcb61d25ebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHw%3D&w=1000&q=80", 
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UeognG3amdJ1O40yPfH5m9H3sHalGpnbyg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAm7FzgJFi7qbAJYlPGy4pVL5FOwtoJmgdew&usqp=CAU",
+            "https://assets.weforum.org/report/cover_image/iW-Fe2AArhzBvY18OkovlCVVWxJe_mxZ0E5TjBs8MKw.jpg",
+        ];
+        for (i = 0; i < myImgAddress.length; i++){
+            var myimgURl =    
+            "https://images.unsplash.com/photo-1586082207282-3dcb61d25ebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHw%3D&w=1000&q=80";
+            var myImage = document.createElement("img");
+            if (i >= 4) {
+                myImage.setAttribute("src", myImgAddress[0]);
+            } else {
+                myImage.setAttribute("src", myImgAddress[i]);
+            }
+            myImage.style.width = "250px";
+            myImage.style.height = "150px";
+            myImage.style.border = " 1px solid blue";
+            myImage.style.margin = "15px";
+            document.body.appendChild(myImage);
+        } 
+    </script>
+</body>
+</html>

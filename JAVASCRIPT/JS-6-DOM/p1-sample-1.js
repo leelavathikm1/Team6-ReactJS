@@ -1,36 +1,50 @@
-var students = [
-    {
-        name: "Vidya",
-        age: 31,
-        mobile: 9398795273,
-        city: "Hyderabad",
-        state: "Telangana",
-        pincode: 500090,
-      },
-      {
-        name: "Vasu",
-        age: 37,
-        mobile: 9398795273,
-        city: "Hyderabad",
-        state: "Telangana",
-        pincode: 500090,
-      },
-      
-      {
-        name: "Srividya",
-        age: 31,
-        mobile: 9398795273,
-        city: "Hyderabad",
-        state: "Telangana",
-        pincode: 500090,
-      },
-      
-      {
-        name: "sriniasu",
-        age: 37,
-        mobile: 9398795273,
-        city: "Hyderabad",
-        state: "Telangana",
-        pincode: 500090,
-      },
-]
+var studens = [
+  {
+    name: "Mahesh",
+    age: 25,
+    mobile: 98864378,
+    city: "Chittoor",
+    state: "Andhra Pradesh",
+    pincode: 570072,
+  },
+  {
+    name: "SaiKiran",
+    age: 25,
+    mobile: 98864378,
+    city: "Chittoor",
+    state: "Andhra Pradesh",
+    pincode: 570072,
+  },
+  {
+    name: "Nithya",
+    age: 25,
+    mobile: 98864378,
+    city: "Chittoor",
+    state: "Andhra Pradesh",
+    pincode: 570072,
+  },
+  {
+    name: "Vidya",
+    age: 25,
+    mobile: 98864378,
+    city: "Chittoor",
+    state: "Andhra Pradesh",
+    pincode: 570072,
+  },
+  {
+    name: "Deepthi",
+    age: 25,
+    mobile: 98864378,
+    city: "Chittoor",
+    state: "Andhra Pradesh",
+    pincode: 570072,
+  },
+  {
+    name: "Akalya",
+    age: 25,
+    mobile: 98864378,
+    city: "Chittoor",
+    state: "Andhra Pradesh",
+    pincode: 570072,
+  },
+];

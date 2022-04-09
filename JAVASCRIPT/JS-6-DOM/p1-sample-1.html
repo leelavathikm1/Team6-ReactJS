@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Phone No</th>
-                <th>City</th>
-                <th>State</th>
-                <th>Zip</th>
-            </tr>
-        </thead>
-        <tbody id="myTbody"></tbody>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Mobile</th>
+          <th>city</th>
+          <th>State</th>
+          <th>Zip</th>
+        </tr>
+      </thead>
+      <tbody id="myTbody"></tbody>
     </table>
-    <script>
-        var myHeading = document.createElement("h3");
-        document.body.appendChild(myHeading);
-        myHeading.innerText = "Hi Iam Js Es6";
-        var  flowers = ["Rose", "Lotus", "Jasmine", "Tulip" ];
-        for(i=0; i<=10; i++){
-            document.write(i +"<br>")
-        }
-        for(i=0; i< myHeading.lenght; i++){
-            var myHeading = document.createElement("h3");
-        document.body.appendChild(myHeading);
-        myHeading.innerText = "Hi Iam Js Es6";
-        }
 
-        var displaystudents=students
-        for (i=0; i < students.lenght; i++){
-            var myTr = document.createElement("tr");
-        for (a in students){
-            var myTd = document.createElement("td");
-            myTd.innerText = students[i][a];
-            myTr.appendChild(myTd);
+    <script src="./p1-sample-1.js"></script>
+    <script>     
+
+       // var dispStudents=student
+      for (i = 0; i < studens.length; i++) {
+        var myTr = document.createElement("tr");
+        for (a in studens[0]) {
+          var myTd = document.createElement("td");
+          myTd.innerHTML = studens[i][a];
+          myTr.appendChild(myTd);
         }
         document.getElementById("myTbody").appendChild(myTr);
-        }
-        
+      };
     </script>
-</body>
+  </body>
 </html>
