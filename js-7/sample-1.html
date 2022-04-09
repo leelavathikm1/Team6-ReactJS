@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label for="fname">firstName</label>
+        <input type="text" id="fName">
+
+        <label for="lname">lastName</label>
+        <input type="text" id="lName"><br><br>
+
+        <label for="age">age</label>
+        <input type="text" id="age"><br><br>
+
+        <label for="number">enter mobile number</label>
+        <input type="text" id="number"><br><br>
+
+        <label for="city">city</label>
+        <input type="text" id="city"><br><br>
+
+        <label for="password">password</label>
+        <input type="password" id="password"><br><br>
+
+        <label for="village">enter village name</label>
+        <input type="text" id="village"><br><br>
+        <button type="button" onclick="getValue()">Submit</button>
+    </form>
+    <ul id="myUl"></ul>
+    <script>
+        function getValue() {
+            var firstName=document.getElementById("fName").value;
+            var lastName=document.getElementById("lName").value;
+            var age=document.getElementById("age").value;
+            var number=document.getElementById("number").value;
+            var city =document.getElementById("city").value;
+            var password=document.getElementById("password").value;
+            var village=document.getElementById("village").value;
+
+            //this is one method to itterate object when both the names are same
+            // var students={
+            //     firstName:firstName,
+            //     lastName:lastName,
+            //     age:age,
+            //     number:number,
+            //     city:city,
+            //     password:password,
+            //     village:village,
+            // };
+            
+        //    console.log(students) 
+
+        // this is another method to itterate object
+
+        //    var students={
+        //        firstName,
+        //        lastName,
+        //        age,
+        //        number,
+        //        city,
+        //        password,
+        //        village,
+        //    }    
+      var students={
+        fName:"",
+        lName:"",
+        age:"",
+        number:"",
+        city:"",
+        password:"",
+        village:"",
+      };
+      for(a in students){
+          students[a]=document.getElementById(a).value;
+      }
+        console.log(students)
+        }
+    </script>
+    
+</body>
+</html>

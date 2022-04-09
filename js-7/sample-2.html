@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+       <label for="fname">enter last name</label>
+       <input type="text" id="firstName"><br><br>
+       <label for="lname">lastName</label>
+       <input type="text" id="lastName"><br><br>
+       <label for="age">enter age</label>
+       <input type="text" id="age"><br><br>
+       <label for="number">mobile number</label>
+       <input type="text" id="number"><br><br>
+       <button type="button" onclick="getValue ()">submit</button>
+    </form> 
+    <script>
+           function getValue(){
+           var firstName=document.getElementById("firstName").value;
+           var lastName=document.getElementById("lastName").value;
+           var age=document.getElementById("age").value;
+           var number=document.getElementById("number").vaiue;
+
+        //    var students={
+        //        firstName:firstName,
+        //        lastName:lastName,
+        //        age:age,
+        //        number:number
+        //    }
+        //    console.log(students)
+
+        //this is another method
+        // var students={
+        //     firstName,
+        //     lastName,
+        //     age,
+        //     number,
+        // }
+        // console.log(students)
+
+        var students={
+            firstName:"",
+            lastName:"",
+            age:"",
+            number:"",
+        }
+        for(a in students){
+            students[a]=document.getElementById(a).value;
+        }
+        console.log(students)
+       }
+
+    </script>
+
+</body>
+</html>
