@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgAddress=[
+            "https://w0.peakpx.com/wallpaper/379/879/HD-wallpaper-lord-shiva-devatee-ganapathi-shree-ganesh-shree-krishna-spiritual-thumbnail.jpg",
+            "https://thumbs.dreamstime.com/b/small-statue-lord-shiva-ground-red-beads-n-114202367.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5xtzHqc4djeKsD_mm0GxXQhldvGFlE__Rsg&usqp=CAU",
+            "https://images.news18.com/ibnlive/uploads/2021/07/1627113535_lord-shiva-1200x800.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3_RvOt3PNb1mw7vSErTgoJuOeshKc7VrmA&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm3_RvOt3PNb1mw7vSErTgoJuOeshKc7VrmA&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR289yW7xCCgbRlv4WgEczwp_h4gqq7Drgmnykr9hiYcr857tVfvdeEMoFsIEd3-hjRm0I&usqp=CAU",
+            "https://i.pinimg.com/originals/18/d9/6a/18d96ad8c1f756d69b7a08068355e509.jpg",
+            "https://www.whatsappprofiledpimages.com/wp-content/uploads/2021/07/God-Shiva-Images-46-300x300.gif",
+            "https://i.pinimg.com/originals/ff/e9/de/ffe9def507ad3cf6461d42847cdd94fa.jpg",
+        ]
+        for (i=0; i<myImgAddress.length;i++){
+        var myImgUrl=
+        "https://www.filmibeat.com/ph-big/2012/01/1325845008613892.jpg";
+        var myImage=document .createElement("img");
+        if(i>=10){
+            myImage.setAttribute("src",myImgAddress[0]);
+        }
+        else{
+            myImage.setAttribute("src",myImgAddress[i]);
+        }
+        myImage.style.width="250px"
+        myImage.style.height="200px"
+        myImage.style.border="1px solid"
+        myImage.style.margin="20px"
+        document.body.appendChild(myImage);
+    }
+
+    </script>
+</body>
+</html>

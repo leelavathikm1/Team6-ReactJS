@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="gender" value="male">Male <br> 
+    <input type="radio" name="gender" value="female">Female <br> <br>
+
+    <input type="checkbox" name="Cplayers" value="ViratKohli">ViratKohli <br>
+    <input type="checkbox" name="Cplayers" value="Rahul">Rahul <br>
+    <input type="checkbox" name="Cplayers" value="Siraj">Siraj <br>
+    <input type="checkbox" name="Cplayers" value="Maxi"> Maxi <br>
+    <input type="checkbox" name="Cplayers" value="Faf du">Faf du <br>
+    <input type="checkbox" name="Cplayers" value="Devillirs"> Devillirs <br>
+
+    <button type="button" onclick="cricket()"> submit</button>
+
+    <script>
+        function cricket(){
+            sports ={
+                gender :"",
+                Cplayers:[],
+            };
+            var allRadioBtns=document.getElementsByName("gender");
+            allRadioBtns .forEach((selectedVal)=>{
+                if (selectedVal.checked==true){
+                    sports.gender=selectedVal.value;
+                };
+            });
+            console.log(sports.gender);
+            var allcheckboxes=document.getElementsByName("Cplayers")
+            allcheckboxes.forEach((capturedVal)=>{
+                if(capturedVal.checked==true){
+                    sports .Cplayers.push (capturedVal.value);
+                };
+            });
+            console.log(sports.Cplayers);
+
+        }
+    </script>
+</body>
+</html>

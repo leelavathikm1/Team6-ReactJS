@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="Gender" value="Male"> Male <br>
+    <input type="radio" name="Gender" value="Female">Female <br><br>
+
+    <input type="checkbox" name="Students" value="Raju">Raju <br>
+    <input type="checkbox" name="Students" value="Raju">Dheena <br>
+    <input type="checkbox" name="Students" value="Rehman">Rehman <br>
+    <input type="checkbox" name="Students" value="SaiKiran">SaiKiran<br>
+    <input type="checkbox" name="Students" value="Naveen">naveen<br>
+    <input type="checkbox" name="Students" value="Viajy">Viajy <br>
+
+    <button type="button" onclick="Details()">getdetails</button>
+
+    <script>
+        function Details(){
+            var person ={
+                Gender :"",
+                students:[],
+            };
+            var allRadioBtns =document.getElementsByName("Gender");
+            allRadioBtns.forEach((selectedVal)=>{
+                if (selectedVal .Checked == true){
+                    person .Gender=selectedVal.value;
+                }                
+            });
+            console.log(person.Gender);
+            var allcheckboxes=document.getElementsByName("Students");
+
+            allcheckboxes .forEach((caputuredVal)=>{
+                if (caputuredVal.Checked==true){
+                    person.students.push(caputuredVal.value);
+                }
+            });
+              console.log(person.students)  
+            
+        }
+    </script>
+    
+</body>
+</html>

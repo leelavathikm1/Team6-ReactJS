@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgadress=[
+            "https://i.pinimg.com/originals/ec/b2/7d/ecb27dcba0ab8d08ea05efb0d43bf5f5.jpg",
+            "https://www.newsintv.com/wp-content/uploads/2022/04/beast-vijay-wallpaper.jpg",
+            "https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/Beast_HalamithiHabibo_Screengrab_15022022_1200.jpg?itok=jUS2SxX7",
+            "https://www.newsintv.com/wp-content/uploads/2022/01/beast-vijay-hd-download.jpg",
+        ];
+
+        for (i=0;i<myImgadress.length;i++){
+             "https://images.news18.com/ibnlive/uploads/2021/09/thalapathy-vijay.jpg";
+            var myImage=document.createElement("img");
+            if(i>=4){
+                myImage.setAttribute("src",myImgadress[0]);
+            }
+            else{
+                myImage.setAttribute("src", myImgadress[i]);
+            }
+            myImage.style.width="250px";
+            myImage.style.height="150px";
+            myImage.style.border="1px solid blue";
+            myImage.style.margin="15px";
+            document.body.appendChild(myImage);
+
+        }
+    </script>
+</body>
+</html>

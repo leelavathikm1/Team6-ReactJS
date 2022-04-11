@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>"fname"</th>
+                <th>"lname"</th>
+                <th>"tel"</th>
+                <th>"address"</th>
+                <th>"city"</th>
+                <th>"state"</th>
+                <th>"Zip"</th>
+            </tr>
+        </thead>
+        <script src="./table1.js"></script>
+
+        <tbody id="mytbody"></tbody>
+    </table>
+    <script>
+        for (i=0;i<details.length;i++){
+            var myTr=document.createElement("tr");
+            document.getElementById("mytbody").appendChild(myTr);
+            for(a in details[0]){
+                var myTd=document.createElement("td");
+                myTd.innerHTML=details[i][a];
+                myTr.appendChild(myTd);
+            }
+        }
+    </script>
+</body>
+</html>

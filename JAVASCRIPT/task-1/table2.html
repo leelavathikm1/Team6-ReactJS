@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>class</th>
+                <th>RollNo</th>
+                <th>Add num</th>
+                <th>College</th>
+                <th>E-mail</th>
+                <th>phone</th>
+            </tr>
+        </thead>
+        <script src="./table2.js"></script>
+        <tbody id="mytbody"></tbody>
+    </table>
+    <script>
+        for (i=0;i<movies.length;i++){
+            var myTr=document.createElement("tr");
+            document.getElementById("mytbody").appendChild(myTr)
+            for(a in movies [0] ){
+             var myTd=document.createElement("td");
+             myTr.appendChild(myTd)
+             myTd.innerHTML=movies[i][a];
+
+            }
+            document.getElementById("mytbody").style.color="red"
+        }
+    </script>
+</body>
+</html>

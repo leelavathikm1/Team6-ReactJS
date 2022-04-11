@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        var myImgAddress=[
+     "https://static.toiimg.com/photo/77262782.cms",
+     "https://rukminim1.flixcart.com/image/416/416/jmwch3k0/poster/b/b/c/medium-south-indian-actors-poster-ram-charan-teja-magadheera-original-imaf9pfepysvmtw2.jpeg?q=70",
+     "https://i.pinimg.com/originals/1b/b6/10/1bb610256a30dcbb1c85d9e984f6f8a0.jpg",
+     "https://1.bp.blogspot.com/-Jk84wcwxG4s/YJfeltCqm8I/AAAAAAAAIN8/oIPBjvaMGismgbZIyViLIwCXvurksCeXgCLcBGAsYHQ/s0/HDgallery%2BMagadheera%2BUnseen%2B%252838%2529.jpg",
+     "https://1.bp.blogspot.com/-YvCFObxR_sc/YJfebBbh2kI/AAAAAAAAIME/jIEXG3UZVv4qXrblUGTw5rPT8BgCPCeIwCLcBGAsYHQ/s0/HDgallery%2BMagadheera%2BUnseen%2B%252812%2529.JPG",
+     "https://1.bp.blogspot.com/-fXxx_A3Lv84/YJfel7SzVQI/AAAAAAAAIOA/EGBvRIJlC-gG1T3mTX3C8EH1ZNNzNyrcACLcBGAsYHQ/s0/HDgallery%2BMagadheera%2BUnseen%2B%252839%2529.JPG",
+     "https://www.theplace2.ru/cache/archive/ram_charan_teja/img/Maaveeran_16_697x102-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg",
+     "https://www.pinkvilla.com/imageresize/magadheera_in_hindi_social.jpg?width=752&format=webp&t=pvorg",
+     "https://i.pinimg.com/564x/04/50/ce/0450ce1be99fadc3ec262cb67d9f8b7c.jpg",
+     "https://www.filmibeat.com/ph-big/2012/01/1325845008613892.jpg",
+
+    ];
+    for (i=0; i<myImgAddress.length;i++){
+        var myImgUrl=
+        "https://www.filmibeat.com/ph-big/2012/01/1325845008613892.jpg";
+        var myImage=document .createElement("img");
+        if(i>=10){
+            myImage.setAttribute("src",myImgAddress[0]);
+        }
+        else{
+            myImage.setAttribute("src",myImgAddress[i]);
+        }
+        myImage.style.width="300px"
+        myImage.style.height="150px"
+        myImage.style.border="1px solid blue"
+        myImage.style.margin="15px"
+        document.body.appendChild(myImage);
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="Male" value="Male">Male <br>
+    <input type="radio" name="Female" value="Female">Female <br><br>
+
+    <input type="checkbox" name="actor" value="Viajy">Vijay <br>
+    <input type="checkbox" name="actor" value="RamCharan">RamCharan <br>
+    <input type="checkbox" name="actor" value="GVprakash">GVprakash <br>
+    <input type="checkbox" name="actor" value="Chirru">Chirru <br>
+    <input type="checkbox" name="actor" value="Jeeva"> Jeeva<br>
+     
+    <button type="button" onclick="Movies()">EnterData</button>
+     <script>
+         function Movies(){
+             var cinema={
+                 gender:"",
+                 actor:[],
+             };
+             var allRadioBtns=document.getElementsByName("gender");
+             allRadioBtns.forEach((selectedVal)=>{
+                if (selectedVal.checked==true){
+                    cinema.gender=selectedVal.value;
+                } 
+                console.log(cinema.gender)
+             });
+             var allcheckboxes=document.getElementsByName("actor");
+             
+             allcheckboxes . forEach((capturedVal)=>{
+                 if (capturedVal . checked==true){
+                    cinema.actor.push(capturedVal.value);
+                 }
+             });
+             console.log(cinema.actor)
+         }
+     </script>
+</body>
+</html>

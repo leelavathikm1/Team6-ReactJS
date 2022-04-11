@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgAddress=[
+     "https://www.finetoshine.com/wp-content/uploads/2020/04/special-rituals-to-Lord-Shiva-and-Goddess-durga-will-give.jpg",
+     "https://www.finetoshine.com/wp-content/uploads/2020/04/special-rituals-to-Lord-Shiva-and-Goddess-durga-will-give.jpg",
+     "https://www.finetoshine.com/wp-content/uploads/2020/04/special-rituals-to-Lord-Shiva-and-Goddess-durga-will-give.jpg",
+     "https://www.finetoshine.com/wp-content/uploads/2020/04/special-rituals-to-Lord-Shiva-and-Goddess-durga-will-give.jpg",
+     "https://www.finetoshine.com/wp-content/uploads/2020/04/special-rituals-to-Lord-Shiva-and-Goddess-durga-will-give.jpg",
+     "https://www.finetoshine.com/wp-content/uploads/2020/04/special-rituals-to-Lord-Shiva-and-Goddess-durga-will-give.jpg",
+     "https://www.finetoshine.com/wp-content/uploads/2020/04/special-rituals-to-Lord-Shiva-and-Goddess-durga-will-give.jpg",
+     "https://www.pinkvilla.com/imageresize/magadheera_in_hindi_social.jpg?width=752&format=webp&t=pvorg",
+     "https://i.pinimg.com/564x/04/50/ce/0450ce1be99fadc3ec262cb67d9f8b7c.jpg",
+     "https://www.filmibeat.com/ph-big/2012/01/1325845008613892.jpg",
+
+    ];
+    for (i=0; i<myImgAddress.length;i++){
+        var myImgUrl=
+        "https://www.filmibeat.com/ph-big/2012/01/1325845008613892.jpg";
+        var myImage=document .createElement("img");
+        if(i>=10){
+            myImage.setAttribute("src",myImgAddress[0]);
+        }
+        else{
+            myImage.setAttribute("src",myImgAddress[i]);
+        }
+        myImage.style.width="300px"
+        myImage.style.height="300px"
+        document.body.appendChild(myImage);
+    }
+    </script>
+</body>
+</html>
