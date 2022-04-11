@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgAddress=[
+            "https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175__340.jpg",
+            "https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149__340.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg",
+            "https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149__340.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg",
+            "https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149__340.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg",
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg" ,
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg" ,
+         
+        ];
+        for(i=0;i<myImgAddress.length;i++){
+            var myImgUrl=
+           "https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175__340.jpg";
+            "https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149__340.jpg" ;
+            "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg" ;
+
+            var myImage=document.createElement("img")
+            if(i>=5){
+                myImage.setAttribute("src",myImgAddress[0])
+            }
+            else{
+                myImage.setAttribute("src",myImgAddress[i])
+            }
+            myImage.style.width="200px";
+            myImage.style.length="110px";
+            myImage.style.border="2px"
+            document.body.appendChild(myImage)
+
+
+            
+        }
+    
+    </script>
+</body>
+</html>

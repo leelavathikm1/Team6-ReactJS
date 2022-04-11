@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="gender" value="female">female <br>
+    <input type="radio" name="gender" value="male">male <br>
+    <input type="checkbox" name="inter" value="mpc">MPC <br>
+    <input type="checkbox" name="inter" value="BIPC">BiPC <br>
+    <input type="checkbox" name="inter" value="CEC">CEC <br>
+    <input type="checkbox" name="inter" value="HEC" >HEC <br>
+    <button type="button" onclick="getDetails()">click</button>
+    <script>
+        function getDetails(){
+            var person={
+                gender:"",
+                inter:[],
+            }
+            var allRadioBtns=document.getElementsByName("gender");
+            allRadioBtns.forEach((selectedVal)=>{
+                if(selectedVal.checked==true){
+                    person.gender=selectedVal.value
+                };
+                console.log(person.gender);
+            });
+            var allcheckboxes=document.getElementsByName("inter");
+            allcheckboxes.forEach((selectedVal)=>{
+                if(selectedVal.selected==true){
+                    person.inter.push(selectedVal.value);
+                };
+            });
+            console.log(person.inter)
+        }
+    </script>
+</body>
+</html>

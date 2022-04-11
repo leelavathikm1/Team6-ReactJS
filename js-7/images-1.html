@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myImgAddress=[
+            "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg", 
+            "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" ,
+            "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" ,
+            "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+            "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" ,
+
+
+        ];
+        for(i=0;i<myImgAddress.length;i++){
+            var myImgUrl=
+            "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg";
+            "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" 
+
+            var myImage=document.createElement("img");
+            if(i>=5){
+                myImage.setAttribute("src",myImgAddress[0]);
+            }
+            else{
+                myImage.setAttribute("src",myImgAddress[i]);
+            }
+            myImage.style.width="250px";
+            myImage.style.height="150px",
+            myImage.style.border="1px";
+            myImage.style.margin="3px";
+            document.body.appendChild(myImage);
+        }
+    </script>
+    
+</body>
+</html>
