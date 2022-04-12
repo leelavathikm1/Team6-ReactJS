@@ -1,4 +1,4 @@
-var studens = [
+var students = [
   {
     name: "Mahesh",
     age: 25,

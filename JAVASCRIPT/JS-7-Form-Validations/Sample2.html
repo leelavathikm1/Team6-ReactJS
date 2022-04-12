@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="">
+      <label for="fname">First Name : </label>
+      <input type="text" name="" id="fname" onkeyup="validate()" /> <br />
+      <p style="color: red" id="fnameError">
+        Please enter At least 6 Characters
+      </p>
+
+      <label for="lname">Last Name :</label>
+      <input type="text" name="" id="lname" onkeyup="validate()" />
+      <p style="color: red" id="lnameError">
+        Please enter At least 8 Characters
+      </p>
+
+      <button disabled>Add User</button>
+    </form>
+
+    <script>
+      function validate() {
+        var person = {
+          fname: document.getElementById("fname").value,
+          lname: document.getElementById("lname").value,
+        };
+
+        if (person.fname.length >= 6) {
+          document.getElementById("fnameError").style.display = "none";
+        } else {
+          document.getElementById("fnameError").style.display = "block";
+        }
+
+        if (person.lname.length >= 8) {
+          document.getElementById("lnameError").style.display = "none";
+        } else {
+          document.getElementById("lnameError").style.display = "block";
+        }
+
+        if (person.fname.length >= 6 && person.lname.length >= 8) {
+          document.querySelector("button").removeAttribute("disabled");
+        } else {
+          document.querySelector("button").setAttribute("disabled", true);
+        }
+      }
+    </script>
+  </body>
+</html>

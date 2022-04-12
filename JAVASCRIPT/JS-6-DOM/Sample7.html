@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="capture" onkeyup="getSearch()" />
+    <hr />
+    <div id="dispData"></div>
+    <script src="./studentsData.js"></script>
+    <script>
+      var searchResults = null;
+
+      function getSearch() {
+        var searchValue = document.getElementById("capture").value;
+        if (searchValue) {
+          searchResults = students.find(function (student) {
+            // return student.name == searchValue;
+            return student.name.indexOf(searchValue) > -1;
+          });
+        } else {
+          searchResults = null;
+        }
+        console.log(searchResults);
+        displaySearchResults();
+      }
+
+      function displaySearchResults() {
+        var results = "";
+        for (a in searchResults) {
+          results += searchResults[a] + "<br>";
+        }
+        document.getElementById("dispData").innerHTML = results;
+      }
+    </script>
+  </body>
+</html>
