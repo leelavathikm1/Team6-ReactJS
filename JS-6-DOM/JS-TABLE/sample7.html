@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="capture" onkeyup="getsearch()">
+    
+    <div id="disdata"></div>
+    <script src="sample7.js"></script>
+    <script>
+        var searchresults=null;
+        function getsearch(){
+            var searchvalue=document.getElementById("capture").value;
+            if(searchvalue){
+                searchresults=students.find(function(students){
+                    // return students.name==searchvalue
+                    return students.name.indexOf(searchvalue)>-1;
+                })
+            }
+            else{
+                searchresults=null
+            }
+            console.log(searchresults)
+            displaysearchresult()
+        }
+        function displaysearchresult(){
+            var resultes="";
+            for(a in searchresults){
+                resultes+=searchresults[a]+"<br>"
+            }
+            document.getElementById("disdata").innerHTML=resultes
+        }
+        
+    </script>
+</body>
+</html>

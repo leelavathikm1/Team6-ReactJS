@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="capture" onkeyup="getdata()">
+   
+   <div id="dispdata"></div>
+    <script src="./sample6.js"></script>
+    <script>
+        var searchresult=null;
+         function getdata(){
+             var searchvalue=document.getElementById("capture").value
+             if(searchvalue){
+                searchresult=rich.find(function(rich){
+                    // return rich.name==searchvalue
+                    return rich.name.indexOf(searchvalue)>-1
+                })
+             }else{
+                 searchresult=null
+             }
+             console.log(searchresult)
+             displaysearchresult()
+         }
+         function displaysearchresult(){
+            var results="";
+         for(a in searchresult){
+             results=searchresult[a]+"<br>"
+         }
+         document.getElementById("dispdata").innerHTML=results
+         }
+        
+    </script>
+</body>
+</html>
