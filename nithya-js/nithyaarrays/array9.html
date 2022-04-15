@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var heros=["chiranjeevi","pavan","ramcharan","ram","NTR"]
+        heros.forEach(function(heronames,i){
+            document.write(i +" . "+heronames+"<br>")
+        })
+        var actors=heros.map((heronames)=>{
+            return heronames+"@heros.com"+"<br>";
+        })
+        document.write(actors)
+        let actors=heros.every((heronames)=>{
+            return heronames.length >=5;
+        })
+        console.log(actors)
+        let actor=heros.some((heronames)=>{
+            return heronames.length >=6;
+        })
+        console.log(actor)
+    </script>
+</body>
+</html>
