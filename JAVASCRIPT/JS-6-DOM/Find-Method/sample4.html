@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="method" onkeyup="getsearch()">
+       <ul id="myul"></ul>
+    <script src="./sample4.js"></script>
+    <script>
+        var searchResults=null;
+        function getsearch(){
+            var searchvalue = document.getElementById("method").value;
+            if (searchvalue){
+                searchResults = students.find(function(student){
+                    // return student.name==searchvalue;
+                    return student.name.indexOf(searchvalue) >-1 ;
+                })
+            }
+            else{
+                searchResults=null;
+            }
+            console.log(searchResults);
+            displaysearchresults();            
+        }
+        function displaysearchresults(){
+            var results="";
+            for (a in searchResults){
+                results +=searchResults [a] + "<br>";
+            }
+           document.getElementById("myul").innerHTML=results;
+           document.getElementById("myul").style.color="red"
+        }
+    </script>
+</body>
+</html>

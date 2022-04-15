@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="fname"> Enter Name</label>
+        <input type="text" id="fname" onkeyup="validatename()"> <br>  <br>
+        <label for="lname"> Last name</label>
+        <input type="text" id="lname" onkeyup="validatename()"> <br> <br>
+        <label for="mail">E-mail</label>
+        <input type="text" id="mmail" onkeyup="validatename()"> <br> <br>
+        <label for="phone">Enter Number</label>
+        <input type="text" id="phone" onkeyup="validatename()"> <br> <br>
+         <h4 style="color:red;">enter 8 charecters</h4>
+        <button type="button" disabled>Submit</button>
+
+        <script>
+            function validatename(){
+                var fname=document.getElementById("fname").value;
+                var lname=document.getElementById("lname").value;
+                var mail=document.getElementById("mmail").value;
+                var phone=document.getElementById("phone").value;
+
+                if (fname.length >=8 && lname.length >=8 && mail.length >=8 && phone.length>=8){
+                    document.querySelector("h4").style.display="none";
+                    document.querySelector("button").removeAttribute("disabled");
+                    document.querySelector("button").style.color="red"
+                }
+                else{
+                    document.querySelector("h4").style.display="block";
+                    document.querySelector("button").removeAttribute("disabled",true);
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

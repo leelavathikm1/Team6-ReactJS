@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">Enter Name :</label>
+        <input type="text" id="fname" onkeyup="validatename()"> <br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" onkeyup="validatename()"> <br><br>
+        <label for="phone">MobileNumber:</label>
+        <input type="text" id="phone" onkeyup="validatename()"> <br><br>
+        <label for="college">College:</label>
+        <input type="text" id="mycollege" onkeyup="validatename()"> <br><br>
+        <label for="mail">E-mail:</label>
+        <input type="text" id="mail" onkeyup="validatename()"> <br><br>
+        <label for="possword">Possword:</label>
+        <input type="text" id="Possword" onkeyup="validatename()"> <br><br>
+        <h2 style="color: yellow;">enter 8 characters</h2>
+
+        <button type="button" disabled>Submit</button>
+
+        <script>
+            function validatename(){
+                var fname=document.getElementById("fname").value;
+                var lname=document.getElementById("lname").value;
+                var phone=document.getElementById("phone").value;
+                var college=document.getElementById("mycollege").value;
+                var mail=document.getElementById("mail").value;
+                var possword=document.getElementById("Possword").value;
+
+                if(fname.length >=8 && lname.length >=8 && phone.length >=8 && college.length >=8 && mail.length >=8 && possword.length >=8 ){
+                    document.querySelector("h2").style.display="none"
+                    document.querySelector("button").removeAttribute("disabled")
+                    document.querySelector("button").style.color="red",
+                    document.querySelector("button").style.backgroundColor="yellow"
+                    document.querySelector("button").style.borderRadius="5px"
+                }
+                else{
+                    document.querySelector("h2").style.display="block"
+                    document.querySelector("button").removeAttribute("disabled",true)
+                }
+                
+            }
+        </script>
+    </form>
+</body>
+</html>
