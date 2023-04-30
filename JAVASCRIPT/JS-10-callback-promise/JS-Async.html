@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <th>id</th>
+        <th>Name</th>
+        <th>User</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Company</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      function getDataFromServer() {
+        return new Promise((resolve, reject) => {
+          var getData = new XMLHttpRequest();
+          getData.onreadystatechange = function () {
+            if (getData.status == 200 && getData.readyState == 4) {
+              let allUsers = JSON.parse(this.response);
+              resolve(allUsers);
+            }
+          };
+          getData.open("GET", "https://jsonplaceholder.typicode.com/users");
+          getData.send();
+        });
+      }
+
+      function displayUsers(allUsers) {
+        allUsers.forEach((user, i) => {
+          var myTr = document.createElement("tr");
+          console.log(user);
+          for (a in user) {
+            var myTd = document.createElement("td");
+            myTd.innerHTML = user[a];
+            myTr.appendChild(myTd);
+          }
+          document.querySelector("tBody").appendChild(myTr);
+        });
+      }
+
+      async function getAndDisplayUsers() {
+        var users = await getDataFromServer();
+        displayUsers(users);
+      }
+      getAndDisplayUsers();
+    </script>
+  </body>
+</html>

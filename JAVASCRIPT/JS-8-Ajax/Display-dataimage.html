@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" onclick="getDataFromAPI()">Get Data</button>
+    <table>
+      <tbody></tbody>
+    </table>
+    <script>
+      function getDataFromAPI() {
+        var getData = new XMLHttpRequest();
+        getData.onreadystatechange = function () {
+          if (getData.status == 200 && getData.readyState == 4) {
+            var allUsers = JSON.parse(this.response);
+            displayUsers(allUsers);
+            console.log(allUsers);
+          }
+        };
+        getData.open("GET", "https://jsonplaceholder.typicode.com/photos");
+        getData.send();
+      }
+
+      function displayUsers(allUsers) {
+        allUsers.forEach((user) => {
+          var myTr = document.createElement("tr");
+          for (a in user) {
+            if (a !== "url" && a !== "thumbnailUrl") {
+              var myTd = document.createElement("td");
+              myTd.innerHTML = user[a];
+              myTr.appendChild(myTd);
+            } else {
+              var myTd = document.createElement("td");
+              var myImg = document.createElement("img");
+              myImg.setAttribute("src", user[a]);
+              myTd.appendChild(myImg);
+              myTr.appendChild(myTd);
+            }
+          }
+          document.querySelector("tBody").appendChild(myTr);
+        });
+      }
+    </script>
+  </body>
+</html>

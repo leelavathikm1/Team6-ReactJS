@@ -5,14 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .tableDiv {
+        border: 1px solid red;
+        padding: 10px;
+        float: left;
+        margin: 2px;
+      }
+    </style>
   </head>
   <body>
+    <div id="myTableDivs"></div>
     <script>
       //   var targetNum = prompt("Enter Number");
-      for (i = 2; i < 10; i++) {
+      for (i = 2; i <= 20; i++) {
+        var mydiv = document.createElement("div");
+        mydiv.setAttribute("class", "tableDiv");
+        var results = "";
         for (j = 1; j <= 10; j++) {
-          document.write(i + " = " + j + " X " + i * j + "<br>");
+          results = results + i + " x " + j + " = " + i * j + "<br>";
+          // document.write(i + " = " + j + " X " + i * j + "<br>");
+          mydiv.innerHTML = results;
         }
+        document.getElementById("myTableDivs").appendChild(mydiv);
       }
     </script>
   </body>

@@ -1,6 +1,6 @@
 var students = [
   {
-    name: "Mahesh",
+    name: "pavan",
     age: 25,
     mobile: 98864378,
     city: "Chittoor",
@@ -16,7 +16,7 @@ var students = [
     pincode: 570072,
   },
   {
-    name: "Nithya",
+    name: "Princella",
     age: 25,
     mobile: 98864378,
     city: "Chittoor",
@@ -24,7 +24,7 @@ var students = [
     pincode: 570072,
   },
   {
-    name: "Vidya",
+    name: "Sruthi",
     age: 25,
     mobile: 98864378,
     city: "Chittoor",
@@ -32,7 +32,7 @@ var students = [
     pincode: 570072,
   },
   {
-    name: "Deepthi",
+    name: "Gowthami",
     age: 25,
     mobile: 98864378,
     city: "Chittoor",
@@ -40,7 +40,7 @@ var students = [
     pincode: 570072,
   },
   {
-    name: "Akalya",
+    name: "Revanth",
     age: 25,
     mobile: 98864378,
     city: "Chittoor",

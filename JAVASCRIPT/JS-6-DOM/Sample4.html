@@ -35,15 +35,38 @@
       //     console.log(fruits[i]);
       //   }
 
-      //   var dispStudents=student
-      for (i = 0; i < studens.length; i++) {
+      // var dispStudents = student;
+      for (i = 0; i < students.length; i++) {
         var myTr = document.createElement("tr");
-        for (a in studens[0]) {
+        for (a in students[i]) {
           var myTd = document.createElement("td");
-          myTd.innerHTML = studens[i][a];
+          myTd.innerHTML = students[i][a];
           myTr.appendChild(myTd);
         }
         document.getElementById("myTbody").appendChild(myTr);
+      }
+
+      for (i = 2; i <= 20; i += 2) {
+        console.log(i);
+      }
+
+      // print even numbers
+      // for (i = 1; i <= 20; i++) {
+      //   if (i % 2 === 0) {
+      //     console.log(i);
+      //   }
+      // }
+
+      // print odd numbers
+      // for (i = 1; i <= 20; i++) {
+      //   if (i % 2 !== 0) {
+      //     console.log(i);
+      //   }
+      // }
+
+      var i = 1;
+      if (i % 2 === 0) {
+        console.log(i);
       }
     </script>
   </body>

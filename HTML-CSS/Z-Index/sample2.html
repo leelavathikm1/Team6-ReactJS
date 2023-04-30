@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -2;
-}
-</style>
-</head>
-<body>
+  <head>
+    <style>
+      img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -2;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  z-index property specifies the stack order of an element. 
+      An element with greater stack order is always in front of an element
+       with a lower stack order. -->
+    <h1>The z-index Property</h1>
 
-<h1>The z-index Property</h1>
+    <img
+      src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg"
+      width="100"
+      height="140"
+    />
 
-<img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg" width="100" height="140">
-
-<p>Because the image has a z-index of -1, it will be placed behind the heading.</p>
-
-</body>
+    <p>
+      Because the image has a z-index of -1, it will be placed behind the
+      heading.
+    </p>
+  </body>
 </html>

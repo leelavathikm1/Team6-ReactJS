@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>ClickMe</button>
+    <button>ClickMe1</button><br />
+    <button>ClickMe2</button><br />
+    <button>ClickMe3</button><br />
+    <button>ClickMe4</button><br />
+    <button>ClickMe5</button><br />
+    <script>
+      //   document.querySelector("button").onclick = sayhello;
+
+      //   function sayhello() {
+      //     console.log("Govinda");
+      //     document.write("Govinda");
+      //   }
+
+      var allButtons = document.querySelectorAll("button");
+      console.log(allButtons);
+      allButtons.forEach(function (btn) {
+        btn.onclick = function () {
+          btn.style.background = "red";
+        };
+      });
+    </script>
+  </body>
+</html>

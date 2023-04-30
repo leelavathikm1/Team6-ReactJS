@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      var allUsers = [];
+      function getAllUsersFromServer() {
+        var getData = new XMLHttpRequest();
+
+        getData.onreadystatechange = function () {
+          if (getData.status == 200 && getData.readyState == 4) {
+            allUsers = JSON.parse(getData.response);
+            displayUsers(allUsers);
+          }
+        };
+        getData.open("GET", "https://fakestoreapi.com/users");
+        getData.send();
+      }
+
+      function displayUsers(allUsers) {
+        allUsers.forEach((user) => {
+          var myUl = document.createElement("ul");
+          for (a in user) {
+            if (a !== "id" && a !== "name") {
+              var myLi = document.createElement("li");
+              myLi.innerHTML = user[a];
+              myUl.appendChild(myLi);
+            }
+          }
+          document.getElementById("demo").appendChild(myUl);
+        });
+      }
+      getAllUsersFromServer();
+    </script>
+  </body>
+</html>

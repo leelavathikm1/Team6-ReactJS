@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var person = {
+      //     name: "Leela",
+      //     age: 37,
+      //     place: "CTR",
+      //   };
+      //creating an object with class in ES6
+      class person {
+        constructor(firstNAme, lastName, email) {
+          this.fname = firstNAme;
+          this.lname = lastName;
+          this.email = email;
+        }
+      }
+      //   var student1 = new student("Leel  a", "Krishna", "leela@gmail.com");
+      //   var student2 = new student("Murali", "Reddy", "murali@gmail.com   ");
+      //   console.log(student2);
+      //   console.log(student1);
+
+      class employeeDetails extends person {
+        constructor(fname, lname, email, compName, role, department, salary) {
+          super(fname, lname, email);
+          this.compName = compName;
+          this.role = role;
+          this.salary = salary;
+          this.department = department;
+        }
+      }
+
+      class sREmployers extends employeeDetails {
+        constructor(
+          fname,
+          lname,
+          email,
+          compName,
+          role,
+          salary,
+          experience,
+          position
+        ) {
+          super(fname, lname, email, compName, role, salary);
+          this.experience = experience;
+          this.position = position;
+        }
+      }
+      var sREmp1 = new sREmployers(
+        "Gayathri",
+        "VM",
+        "gaye@gmail.com",
+        "IBM",
+        "teamLead",
+        2500000,
+        "10years",
+
+        "Sr.Manager"
+      );
+      var emp1 = new employeeDetails(
+        "krishna",
+        "M",
+        "krishna@gmail.com",
+        "L&T",
+        "UI Developer",
+        "Development",
+        250000
+      );
+      var emp2 = new employeeDetails(
+        "Leelavathi",
+        "KM",
+        "leelavathi@l&T.com",
+        "L&T",
+        "UI Developer",
+
+        "IT",
+        235000
+      );
+
+      console.log("emp1", emp1);
+      console.log("emp2", emp2);
+      console.log("sREmp1", sREmp1);
+    </script>
+  </body>
+</html>

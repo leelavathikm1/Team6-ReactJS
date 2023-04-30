@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <label for="email">Enter Email</label>
+    <input type="email" name="" id="email" onkeyup="validate()" />
+    <p style="color: red; display: none">Enter Valid Email Id</p>
+
+    <script>
+      function validate() {
+        document.querySelector("p").style.display = "none";
+
+        var validateEmail = document.getElementById("email").value;
+        var pattern = ["[a-z0-9]+@[a-z]+\.edu\.[a-z]{2,3}"];
+      }
+    </script>
+  </body>
+</html>

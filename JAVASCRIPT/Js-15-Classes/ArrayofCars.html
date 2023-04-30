@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="myUl"></ul>
+
+    <script>
+      let obj = {};
+      var carNames = [
+        "BenzS1",
+        "Hector",
+        "Scorpio",
+        "Scorpio",
+        "Renalt",
+        "Renalt",
+        "MarutiSuzuki",
+        "Scorpio",
+        "Mahindra",
+        "Mahindra",
+      ];
+      var results = "";
+      carNames.forEach((carName) => {
+        var nos = carNames.filter((car) => {
+          return car === carName;
+        });
+        obj[carName] = nos.length;
+      });
+
+      for (a in obj) {
+        results = results + obj[a];
+        document.write(a + ":" + results + "</br>");
+      }
+
+      // document.getElementById("myUl").innerHTML = results;
+      console.log(obj);
+    </script>
+    <br />
+
+    <!-- 
+      let obj = {};
+      var fruits = ["apple", "banana", "guava", "apple", "banana", "Orange"];
+      fruits.forEach((fruit) => {
+        var nos = fruits.filter((frt) => {
+          return frt === fruit;
+        });
+
+        obj[fruit] = nos.length;
+      });
+      console.log(obj);
+     -->
+  </body>
+</html>
